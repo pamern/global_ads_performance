@@ -1,0 +1,24 @@
+project:
+  name: global_adspend_marketing
+
+paths:
+  raw_data_dir: data/raw
+  sample_data_dir: data/sample
+  output_dir: outputs
+  figures_dir: outputs/figures
+  tables_dir: outputs/tables
+  dss_output_dir: outputs/dss
+  log_dir: logs
+
+files:
+  raw_dataset: global_ads_performance_dataset.csv
+
+database:
+  schemas:
+    raw: raw
+    staging: staging
+    intermediate: intermediate
+    mart: mart
+
+  tables:
+    raw_ads: global_ads_performance

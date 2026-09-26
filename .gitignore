@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+.key
+.venv/
+__pycache__/
+*.py[cod]
+logs/
+outputs/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
