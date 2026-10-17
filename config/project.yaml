@@ -12,6 +12,8 @@ paths:
 
 files:
   raw_dataset: global_ads_performance_dataset.csv
+  semantic_config: config/semantic.yaml
+  etl_config: config/etl.yaml
 
 database:
   schemas:

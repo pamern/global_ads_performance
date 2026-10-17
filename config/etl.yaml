@@ -1,0 +1,31 @@
+version: 1
+mode: snapshot
+dataset: global_ads_performance
+database_url: postgresql://nexora_etl@127.0.0.1:55432/nexora_etl_local
+local_database_prefix: nexora_etl_
+batch_size: 1000
+money_precision: 18
+money_scale: 2
+normalize_whitespace: true
+aliases: {}
+tables:
+  source_file: {schema: raw, name: source_file}
+  source_row: {schema: raw, name: ads_source_row}
+  run: {schema: raw, name: etl_run}
+  typed: {schema: staging, name: ads_typed}
+  issue: {schema: staging, name: data_quality_issue}
+  validation: {schema: staging, name: etl_validation}
+  threshold: {schema: intermediate, name: spend_threshold}
+  enriched: {schema: intermediate, name: ads_enriched}
+  fact: {schema: mart, name: fact_ad_performance}
+  publication: {schema: mart, name: dataset_publication}
+  dimension_date: {schema: mart, name: dim_date}
+  dimension_platform: {schema: mart, name: dim_platform}
+  dimension_campaign_type: {schema: mart, name: dim_campaign_type}
+  dimension_industry: {schema: mart, name: dim_industry}
+  dimension_country: {schema: mart, name: dim_country}
+views:
+  fact: {schema: mart, name: v_fact_ad_performance_current}
+  analysis: {schema: mart, name: v_ad_performance_analysis_current}
+  platform_month: {schema: mart, name: v_platform_month_current}
+  publication: {schema: mart, name: v_dataset_status}

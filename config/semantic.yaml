@@ -1,0 +1,129 @@
+# Contract giữa CSV và notebook. Đổi tên cột ở đây khi schema nguồn thay đổi.
+# Các ID (date, revenue, roas...) là khái niệm nghiệp vụ, không phải tên cột nguồn.
+version: 1
+source:
+  encoding: utf-8-sig
+  date_format: '%Y-%m-%d'
+  assume_common_currency: true
+
+dimensions:
+  date: {source_column: date, label: Ngày, type: date}
+  platform: {source_column: platform, label: Nền tảng, type: category}
+  campaign_type: {source_column: campaign_type, label: Loại chiến dịch, type: category}
+  industry: {source_column: industry, label: Ngành, type: category}
+  country: {source_column: country, label: Quốc gia, type: category}
+
+measures:
+  impressions: {source_column: impressions, label: Tổng hiển thị, type: integer, unit: lượt, format: '{:,.0f}'}
+  clicks: {source_column: clicks, label: Tổng lượt nhấp, type: integer, unit: lượt, format: '{:,.0f}'}
+  ad_spend: {source_column: ad_spend, label: Tổng chi phí, type: decimal, unit: đơn vị tiền chung giả định, format: '{:,.2f}'}
+  conversions: {source_column: conversions, label: Tổng chuyển đổi, type: integer, unit: chuyển đổi, format: '{:,.0f}'}
+  revenue: {source_column: revenue, label: Tổng doanh thu, type: decimal, unit: đơn vị tiền chung giả định, format: '{:,.2f}'}
+
+ratios:
+  ctr:
+    label: CTR
+    numerator: clicks
+    denominator: impressions
+    unit: tỷ lệ
+    format: '{:.2%}'
+    source_column: CTR
+    source_decimals: 4
+  cpc:
+    label: CPC
+    numerator: ad_spend
+    denominator: clicks
+    unit: tiền/lượt nhấp
+    format: '{:,.2f}'
+    source_column: CPC
+    source_decimals: 2
+  conversion_rate:
+    label: Conversion Rate
+    numerator: conversions
+    denominator: clicks
+    unit: tỷ lệ
+    format: '{:.2%}'
+  cpa:
+    label: CPA
+    numerator: ad_spend
+    denominator: conversions
+    unit: tiền/chuyển đổi
+    format: '{:,.2f}'
+    source_column: CPA
+    source_decimals: 2
+  roas:
+    label: ROAS
+    numerator: revenue
+    denominator: ad_spend
+    unit: lần
+    format: '{:.3f}×'
+    source_column: ROAS
+    source_decimals: 2
+
+derived_metrics:
+  no_click_rate: {label: Không chuyển thành Click, operation: complement, input: ctr, unit: tỷ lệ, format: '{:.2%}'}
+  no_conversion_rate: {label: Click không chuyển đổi, operation: complement, input: conversion_rate, unit: tỷ lệ, format: '{:.2%}'}
+  avg_spend_per_observation: {label: Chi phí mỗi quan sát, operation: ratio, numerator: ad_spend, denominator: observations, unit: tiền/quan sát, format: '{:,.2f}'}
+
+technical_columns:
+  observation_id: observation_id
+  source_line: source_csv_line
+  observation_count: observations
+  month: month
+  quarter: quarter
+
+analysis:
+  date_dimension: date
+  primary_dimension: platform
+  example_dimensions: [platform, country]
+  cross_dimensions: [industry, country]
+  range_dimensions: [platform, campaign_type, industry, country]
+  spend_measure: ad_spend
+  revenue_measure: revenue
+  roas_metric: roas
+  ctr_metric: ctr
+  growth_measures: [ad_spend, revenue]
+  response_measures: [revenue, conversions]
+  yield_measures: [revenue, conversions, impressions]
+  month_frequency: M
+  quarter_frequency: Q
+  comparison_window_days: 90
+  example_period: latest_complete_month
+  platform_subset_size: 2
+  pocket_min_observations: 10
+  pocket_grains:
+    - {label: Platform × Country × Campaign Type, dimensions: [platform, country, campaign_type]}
+    - {label: Platform × Campaign Type × Industry × Country, dimensions: [platform, campaign_type, industry, country]}
+  baseline_period: latest_observed_quarter
+  roas_histogram: {width: 2, overflow: 20}
+
+spend_levels:
+  thresholds_file: config/spend_thresholds.yaml
+  dimensions: [country, industry]
+  column: spend_level
+  labels: [Low, Medium, High]
+  low_bound_column: low_max
+  high_bound_column: medium_max
+  unknown_label: Unclassified
+  missing_policy: keep_unclassified
+
+display:
+  preview_rows: 6
+  top_rows: 10
+  max_rows: 40
+  max_columns: 18
+  max_colwidth: 95
+
+validation:
+  rtol: 1.0e-10
+  atol: 1.0e-7
+
+export:
+  enabled: false
+  directory: data/semantic
+  filename: platform_month_metrics.csv
+
+pending_definitions:
+  - {metric: Growth Opportunity, reason: Grain và tiêu chí gắn nhãn chưa được nhóm chốt}
+  - {metric: Sensitivity và Decision Status, reason: Cần công thức và ngưỡng của engine DSS}
+  - {metric: Simulated Uplift và Win Rate, reason: Cần bảng kịch bản và tập trạng thái đánh giá riêng}
