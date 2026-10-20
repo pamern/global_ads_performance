@@ -1,0 +1,23 @@
+nexora:
+  target: local
+  outputs:
+    local:
+      type: postgres
+      host: "{{ env_var('LOCAL_PGHOST', '127.0.0.1') }}"
+      port: "{{ env_var('LOCAL_PGPORT', '55432') | int }}"
+      user: "{{ env_var('LOCAL_PGUSER', 'nexora') }}"
+      password: "{{ env_var('LOCAL_PGPASSWORD', '') }}"
+      dbname: "{{ env_var('LOCAL_PGDATABASE', 'nexora') }}"
+      schema: staging
+      threads: 2
+    dev:
+      type: postgres
+      host: "{{ env_var('DBT_DEV_HOST', '') }}"
+      port: "{{ env_var('DBT_DEV_PORT', '5432') | int }}"
+      user: "{{ env_var('DBT_DEV_USER', '') }}"
+      password: "{{ env_var('DBT_DEV_PASSWORD', '') }}"
+      dbname: "{{ env_var('DBT_DEV_DATABASE', '') }}"
+      sslmode: require
+      schema: staging
+      threads: 2
+      connect_timeout: 10
