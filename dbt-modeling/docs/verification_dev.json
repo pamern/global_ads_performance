@@ -1,0 +1,43 @@
+{
+  "target": "dev",
+  "tests": {
+    "pass": 68,
+    "warn": 1
+  },
+  "raw_unchanged": true,
+  "all_mart_rows_and_ids_stable": true,
+  "reconciliation_equal": true,
+  "columns": [
+    "row_count",
+    "impressions",
+    "clicks",
+    "conversions",
+    "ad_spend",
+    "revenue"
+  ],
+  "totals": {
+    "raw": [
+      1800,
+      "185254234",
+      "7132816",
+      "326812",
+      "11108749.09",
+      "54183330.81"
+    ],
+    "fact": [
+      1800,
+      "185254234",
+      "7132816",
+      "326812",
+      "11108749.09",
+      "54183330.81"
+    ]
+  },
+  "dimension_counts": {
+    "DimDate": 365,
+    "DimPlatform": 3,
+    "DimCampaignType": 4,
+    "DimIndustry": 5,
+    "DimCountry": 7
+  }
+}
