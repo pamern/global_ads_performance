@@ -1,0 +1,53 @@
+version: 2
+models:
+- name: int_ads_performance
+  columns:
+  - name: source_row_id
+    data_tests:
+    - unique
+    - not_null
+unit_tests:
+- name: kpi_zero_denominators
+  description: Zero denominator yields NULL; valid divisions preserve decimal ratios.
+  model: int_ads_performance
+  given:
+  - input: ref('stg_ads_performance')
+    rows:
+    - source_row_id: 1
+      impressions: 0
+      clicks: 0
+      conversions: 0
+      ad_spend: 0
+      revenue: 0
+    - source_row_id: 2
+      impressions: 8
+      clicks: 2
+      conversions: 1
+      ad_spend: 3
+      revenue: 9
+    - source_row_id: 3
+      impressions: 10
+      clicks: 2
+      conversions: 0
+      ad_spend: 0
+      revenue: 1
+  expect:
+    rows:
+    - source_row_id: 1
+      ctr: null
+      cpc: null
+      cpa: null
+      conversion_rate: null
+      roas: null
+    - source_row_id: 2
+      ctr: '0.25000000000000000000'
+      cpc: '1.5000000000000000'
+      cpa: '3.0000000000000000'
+      conversion_rate: '0.50000000000000000000'
+      roas: '3.0000000000000000'
+    - source_row_id: 3
+      ctr: '0.20000000000000000000'
+      cpc: '0.00000000000000000000'
+      cpa: null
+      conversion_rate: '0.00000000000000000000'
+      roas: null

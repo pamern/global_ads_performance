@@ -1,0 +1,129 @@
+version: 2
+models:
+- name: dim_date
+  columns:
+  - name: DateKey
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+  - name: Date
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+- name: dim_platform
+  columns:
+  - name: PlatformKey
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+  - name: Platform
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+- name: dim_campaign_type
+  columns:
+  - name: CampaignTypeKey
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+  - name: CampaignType
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+- name: dim_industry
+  columns:
+  - name: IndustryKey
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+  - name: Industry
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+- name: dim_country
+  columns:
+  - name: CountryKey
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+  - name: Country
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+- name: fct_ad_performance
+  columns:
+  - name: FactId
+    data_tests:
+    - unique
+    - not_null
+    quote: true
+  - name: DateKey
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('dim_date')
+          field: '"DateKey"'
+    quote: true
+  - name: PlatformKey
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('dim_platform')
+          field: '"PlatformKey"'
+    quote: true
+  - name: CampaignTypeKey
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('dim_campaign_type')
+          field: '"CampaignTypeKey"'
+    quote: true
+  - name: IndustryKey
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('dim_industry')
+          field: '"IndustryKey"'
+    quote: true
+  - name: CountryKey
+    data_tests:
+    - not_null
+    - relationships:
+        arguments:
+          to: ref('dim_country')
+          field: '"CountryKey"'
+    quote: true
+  - name: Impressions
+    data_tests:
+    - not_null
+    quote: true
+  - name: Clicks
+    data_tests:
+    - not_null
+    quote: true
+  - name: Conversions
+    data_tests:
+    - not_null
+    quote: true
+  - name: AdSpend
+    data_tests:
+    - not_null
+    quote: true
+  - name: Revenue
+    data_tests:
+    - not_null
+    quote: true
