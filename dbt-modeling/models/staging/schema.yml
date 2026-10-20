@@ -1,0 +1,50 @@
+version: 2
+models:
+- name: stg_ads_performance
+  columns:
+  - name: source_row_id
+    data_tests:
+    - unique
+    - not_null
+  - name: date
+    data_tests:
+    - not_null
+  - name: platform
+    data_tests:
+    - not_null
+  - name: campaign_type
+    data_tests:
+    - not_null
+  - name: industry
+    data_tests:
+    - not_null
+  - name: country
+    data_tests:
+    - not_null
+  - name: impressions
+    data_tests:
+    - not_null
+  - name: clicks
+    data_tests:
+    - not_null
+  - name: source_ctr
+    data_tests:
+    - not_null
+  - name: source_cpc
+    data_tests:
+    - not_null
+  - name: ad_spend
+    data_tests:
+    - not_null
+  - name: conversions
+    data_tests:
+    - not_null
+  - name: source_cpa
+    data_tests:
+    - not_null
+  - name: revenue
+    data_tests:
+    - not_null
+  - name: source_roas
+    data_tests:
+    - not_null

@@ -10,3 +10,11 @@ outputs/
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 .vscode/
+# dbt generated artifacts
+dbt-modeling/target/
+dbt-modeling/logs/
+dbt-modeling/dbt_packages/
+dbt-modeling/.user.yml
+
+# Local task prompts
+/prompts/
