@@ -2,6 +2,7 @@ model Model
 	culture: en-US
 	defaultPowerBIDataSourceVersion: powerBI_V3
 	sourceQueryCulture: en-US
+	maxParallelismPerRefresh: 1
 	valueFilterBehavior: independent
 	dataAccessOptions
 		legacyRedirects
@@ -10,6 +11,17 @@ model Model
 annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["DimCampaignType","DimCountry","DimDate","DimIndustry","DimPlatform","FctAdPerformance"]
+
+ref table DimCampaignType
+ref table DimCountry
+ref table DimDate
+ref table DateTableTemplate_8b8dec58-0100-4f33-a3c4-8fbd84252c44
+ref table LocalDateTable_afcafdca-5e1b-4deb-8566-7e47b710cc57
+ref table DimIndustry
+ref table DimPlatform
+ref table FctAdPerformance
 
 ref cultureInfo en-US
 

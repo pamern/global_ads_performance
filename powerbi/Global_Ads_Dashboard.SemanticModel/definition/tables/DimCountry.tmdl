@@ -1,0 +1,31 @@
+table DimCountry
+	lineageTag: f4f42271-f90b-4761-a871-cb363859737c
+
+	column CountryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 667080e0-9c79-4fd8-99a4-0653fd1ed762
+		summarizeBy: none
+		sourceColumn: CountryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 2e776ca6-1be8-409f-b8e2-bcb0a78870b7
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCountry = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				  #"Navigation 1" = Source{[Schema = "mart", Item = "DimCountry"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+

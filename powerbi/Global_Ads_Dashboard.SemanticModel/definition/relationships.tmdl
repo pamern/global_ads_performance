@@ -1,0 +1,25 @@
+relationship c01e6f4e-24a7-4f04-91cc-cee9e2aee462
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DimDate.Date
+	toColumn: LocalDateTable_afcafdca-5e1b-4deb-8566-7e47b710cc57.Date
+
+relationship AutoDetected_6ccb3427-3285-42a5-9e5b-35f11de6e1fa
+	fromColumn: FctAdPerformance.CampaignTypeKey
+	toColumn: DimCampaignType.CampaignTypeKey
+
+relationship AutoDetected_44ed9f06-c65c-48a6-8bd2-4e309fe97f3f
+	fromColumn: FctAdPerformance.CountryKey
+	toColumn: DimCountry.CountryKey
+
+relationship AutoDetected_f543d38a-0957-4533-a1f2-227508795b13
+	fromColumn: FctAdPerformance.DateKey
+	toColumn: DimDate.DateKey
+
+relationship AutoDetected_d74afa0a-7abd-43a2-882c-0bef1175228a
+	fromColumn: FctAdPerformance.IndustryKey
+	toColumn: DimIndustry.IndustryKey
+
+relationship AutoDetected_a73547bf-1505-4c99-a1c2-98afd6966cf5
+	fromColumn: FctAdPerformance.PlatformKey
+	toColumn: DimPlatform.PlatformKey
+

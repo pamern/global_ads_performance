@@ -1,0 +1,31 @@
+table DimIndustry
+	lineageTag: 565628ce-2378-4da0-a0db-e3fffd21fff0
+
+	column IndustryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d57f636-d0d3-4c44-bf60-2cb8dd7a6718
+		summarizeBy: none
+		sourceColumn: IndustryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Industry
+		dataType: string
+		lineageTag: 76b4cc28-6529-4ad0-b061-592412479fba
+		summarizeBy: none
+		sourceColumn: Industry
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimIndustry = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				  #"Navigation 1" = Source{[Schema = "mart", Item = "DimIndustry"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+

@@ -1,0 +1,115 @@
+table FctAdPerformance
+	lineageTag: c946d1b4-ab4a-4739-bda8-8227bcfafe77
+
+	column FactId
+		dataType: int64
+		formatString: 0
+		lineageTag: 513ac015-fc9c-44c3-990e-dba8418f413a
+		summarizeBy: count
+		sourceColumn: FactId
+
+		annotation SummarizationSetBy = Automatic
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: a8062f51-d991-4150-a258-dcea33619811
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column PlatformKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 9c5d83e9-cd97-42e8-887e-fbaf1fc981ad
+		summarizeBy: none
+		sourceColumn: PlatformKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CampaignTypeKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b6f53e0-3302-4033-89de-3179c5917c4c
+		summarizeBy: none
+		sourceColumn: CampaignTypeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column IndustryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 5fcf5aae-13fe-4189-8a3b-df84b9050702
+		summarizeBy: none
+		sourceColumn: IndustryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CountryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 4fbbc97b-7367-4243-9a40-5a5fc3666218
+		summarizeBy: none
+		sourceColumn: CountryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Impressions
+		dataType: int64
+		formatString: 0
+		lineageTag: 0cfd3884-b85e-4012-a067-85aa690d3cf4
+		summarizeBy: sum
+		sourceColumn: Impressions
+
+		annotation SummarizationSetBy = Automatic
+
+	column Clicks
+		dataType: int64
+		formatString: 0
+		lineageTag: 314925a5-38a8-46c2-b7f2-b05496f803ec
+		summarizeBy: sum
+		sourceColumn: Clicks
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdSpend
+		dataType: double
+		lineageTag: c5ec58c3-19a2-44aa-a46c-30bbbb9cbf31
+		summarizeBy: sum
+		sourceColumn: AdSpend
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Conversions
+		dataType: int64
+		formatString: 0
+		lineageTag: 1d65cbe3-ac8b-4c48-b3ec-a0c12b12ef2d
+		summarizeBy: sum
+		sourceColumn: Conversions
+
+		annotation SummarizationSetBy = Automatic
+
+	column Revenue
+		dataType: double
+		lineageTag: 82dd9b48-9699-44f4-81c8-d4fc99ef8a4d
+		summarizeBy: sum
+		sourceColumn: Revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition FctAdPerformance = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    mart_FctAdPerformance = Source{[Schema="mart",Item="FctAdPerformance"]}[Data]
+				in
+				    mart_FctAdPerformance
+
+	changedProperty = Name
+

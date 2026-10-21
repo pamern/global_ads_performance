@@ -1,0 +1,31 @@
+table DimCampaignType
+	lineageTag: c9ff14a0-c6f0-4b8b-a9e5-730f488d77f8
+
+	column CampaignTypeKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 5c0c9cab-c59c-442e-abee-3ff136b23530
+		summarizeBy: none
+		sourceColumn: CampaignTypeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CampaignType
+		dataType: string
+		lineageTag: d141bd5d-87cc-418b-be8d-b80b5e5909f7
+		summarizeBy: none
+		sourceColumn: CampaignType
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCampaignType = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				  #"Navigation 1" = Source{[Schema = "mart", Item = "DimCampaignType"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+

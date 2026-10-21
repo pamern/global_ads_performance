@@ -1,0 +1,83 @@
+table DimDate
+	lineageTag: c8b91913-e3ab-445f-8801-de63827cfb61
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: fde2eda3-bd99-4dd0-89f0-73ce1158b1d6
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8b3a1e4a-f6b7-4269-a470-b658fd949305
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: c01e6f4e-24a7-4f04-91cc-cee9e2aee462
+			defaultHierarchy: LocalDateTable_afcafdca-5e1b-4deb-8566-7e47b710cc57.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: ed9f0591-e3ac-482e-baff-6ef0019c13f8
+		summarizeBy: sum
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: b83fbda7-93ae-4070-8957-28f79cdb7069
+		summarizeBy: sum
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		dataType: string
+		lineageTag: 80e734a0-9366-42b7-bf16-64d9937185ca
+		summarizeBy: none
+		sourceColumn: MonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: e55299f5-56a1-4052-8b53-97dd58263abb
+		summarizeBy: sum
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: a51173a5-504f-46b3-aea4-265884df8909
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				  Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				  #"Navigation 1" = Source{[Schema = "mart", Item = "DimDate"]}[Data]
+				in
+				  #"Navigation 1"
+
+	changedProperty = Name
+
