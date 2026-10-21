@@ -18,3 +18,6 @@ dbt-modeling/.user.yml
 
 # Local task prompts
 /prompts/
+
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
