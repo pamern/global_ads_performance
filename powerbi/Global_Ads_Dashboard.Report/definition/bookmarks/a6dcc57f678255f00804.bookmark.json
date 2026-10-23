@@ -1,0 +1,1203 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/bookmark/2.1.0/schema.json",
+  "displayName": "Reset Filters",
+  "name": "a6dcc57f678255f00804",
+  "options": {
+    "targetVisualNames": [],
+    "suppressDisplay": true,
+    "preserveNewVisualVisibility": true
+  },
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "61a8b7aa78ed3e353c92",
+    "sections": {
+      "61a8b7aa78ed3e353c92": {
+        "visualContainers": {
+          "59eb3a8b1df91fcff4cc": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "5536cf88e66b489ccd38",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "general": [
+                    {
+                      "properties": {
+                        "filter": {
+                          "filter": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "m",
+                                "Entity": "mart DimDate",
+                                "Type": 0
+                              }
+                            ],
+                            "Where": [
+                              {
+                                "Condition": {
+                                  "Comparison": {
+                                    "ComparisonKind": 2,
+                                    "Left": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "m"
+                                          }
+                                        },
+                                        "Property": "Date"
+                                      }
+                                    },
+                                    "Right": {
+                                      "Literal": {
+                                        "Value": "datetime'2024-10-02T00:00:00'"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "data": [
+                    {
+                      "properties": {
+                        "startDate": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "datetime'2024-10-02T00:00:00'"
+                            }
+                          }
+                        },
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Between'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "Date"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "6d1dc9ec959675353abf": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "806f0ab00f348a220be7",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "ROAS"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "ROAS"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "7981905731b67e629440": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "55e1ed7a76da923b9842",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "6e82929fcf6fb7572b7f",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Quarter"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "e46e7c0234b1c6364298",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "74e903b1ee4b3d8c84e4",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Day"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "bce80411e8e1d43e596e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "ROAS"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "8acc988086292b7793e0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "72730cb142083801582e",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0c91cd796152ca6c9e30",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Quarter"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "571e76a8d1e20b4a892a",
+                  "type": "Categorical",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "24b058d6871ad1742e05",
+                  "type": "Advanced",
+                  "expression": {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Day"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "79edd9d92480c6826963",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Total Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "a6bffaa51d17f92be007",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "ROAS"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "lineChart",
+              "objects": {},
+              "activeProjections": {
+                "Category": [
+                  {
+                    "HierarchyLevel": {
+                      "Expression": {
+                        "Hierarchy": {
+                          "Expression": {
+                            "PropertyVariationSource": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "mart DimDate"
+                                }
+                              },
+                              "Name": "Variation",
+                              "Property": "Date"
+                            }
+                          },
+                          "Hierarchy": "Date Hierarchy"
+                        }
+                      },
+                      "Level": "Month"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b3b0f90be47d32bf40b2": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "543d1eb049fa24920afe",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Total Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Total Revenue"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "e4ede78e4ac183e9e8df": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "a70b7999f1ee2c247ed1",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Total Ad Spend"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "cardVisual",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Total Ad Spend"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "f40b1b9f8ac63923f816": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b4f76e8bf10f3cce731e",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Revenue Growth %"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "c596763ccc81d859fec2",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Spend Growth %"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "clusteredBarChart",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 2,
+                  "Expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Revenue Growth %"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "b65feedb69d0b51ccd9e": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "2344b483251dd7772cb8",
+                  "type": "Advanced",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "0555ecf1942e009cb6eb",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Total Ad Spend"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "416aebad6807a9808068",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Total Revenue"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "2f3b11c8088959e56b67",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "ROAS"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "3e5eb1fd9cfe274ca52a",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "MonthName"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "1824cc9fc44f4628ffac",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Period Spend Growth %"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "56cf5dd5c82e0d5ad87d",
+                  "type": "Advanced",
+                  "expression": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_Measures"
+                        }
+                      },
+                      "Property": "Period Revenue Growth %"
+                    }
+                  },
+                  "howCreated": 0
+                },
+                {
+                  "name": "450415757cfe5af0a50d",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "QuarterLabel"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "pivotTable",
+              "objects": {},
+              "orderBy": [
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  }
+                },
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "QuarterLabel"
+                    }
+                  }
+                },
+                {
+                  "Direction": 1,
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "MonthName"
+                    }
+                  }
+                }
+              ],
+              "activeProjections": {
+                "Rows": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "Year"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "QuarterLabel"
+                    }
+                  },
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimDate"
+                        }
+                      },
+                      "Property": "MonthName"
+                    }
+                  }
+                ]
+              },
+              "expansionStates": [
+                {
+                  "roles": [
+                    "Rows"
+                  ],
+                  "levels": [
+                    {
+                      "queryRefs": [
+                        "mart DimDate.Year"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "mart DimDate"
+                              }
+                            },
+                            "Property": "Year"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "mart DimDate.QuarterLabel"
+                      ],
+                      "isCollapsed": true,
+                      "identityKeys": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "mart DimDate"
+                              }
+                            },
+                            "Property": "QuarterLabel"
+                          }
+                        }
+                      ],
+                      "isPinned": true
+                    },
+                    {
+                      "queryRefs": [
+                        "mart DimDate.MonthName"
+                      ],
+                      "isCollapsed": true,
+                      "isPinned": true
+                    }
+                  ],
+                  "root": {
+                    "identityValues": null,
+                    "children": [
+                      {
+                        "identityValues": [
+                          {
+                            "Literal": {
+                              "Value": "2024L"
+                            }
+                          }
+                        ],
+                        "isToggled": true,
+                        "children": [
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'Q1'"
+                                }
+                              }
+                            ],
+                            "isToggled": true
+                          },
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'Q2'"
+                                }
+                              }
+                            ],
+                            "isToggled": true
+                          },
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'Q3'"
+                                }
+                              }
+                            ],
+                            "isToggled": true
+                          },
+                          {
+                            "identityValues": [
+                              {
+                                "Literal": {
+                                  "Value": "'Q4'"
+                                }
+                              }
+                            ],
+                            "isToggled": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "594c181d8a4f856a21c0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "18eb7d417456bf46fe5e",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimCountry"
+                        }
+                      },
+                      "Property": "Country"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        },
+                        "isInvertedSelectionMode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "true"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimCountry"
+                        }
+                      },
+                      "Property": "Country"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "22b12bae845965942cdb": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6db863ab33b38f39bc50",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimCampaignType"
+                        }
+                      },
+                      "Property": "CampaignType"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimCampaignType"
+                        }
+                      },
+                      "Property": "CampaignType"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "2f0ea8457053dfe098d7": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "9c3d515a2b73eb4d1284",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimIndustry"
+                        }
+                      },
+                      "Property": "Industry"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimIndustry"
+                        }
+                      },
+                      "Property": "Industry"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cb1b86b7f97a613a481d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "3df590f0cd3d44717761",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimPlatform"
+                        }
+                      },
+                      "Property": "Platform"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "mart DimPlatform"
+                        }
+                      },
+                      "Property": "Platform"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "a0e68ae0c445b098672c": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          }
+        }
+      }
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
