@@ -1,0 +1,29 @@
+table 'mart DimCountry'
+	lineageTag: db6a1c68-1c1b-4766-b72d-ba7ed706bcda
+
+	column CountryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 75f9cd38-2431-4e85-8db8-23b1a7e93de9
+		summarizeBy: none
+		sourceColumn: CountryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 6c7612f7-18de-497e-9378-72c9d0027d4f
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'mart DimCountry' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    mart_DimCountry = Source{[Schema="mart",Item="DimCountry"]}[Data]
+				in
+				    mart_DimCountry
+

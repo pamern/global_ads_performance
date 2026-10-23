@@ -4,5 +4,12 @@
   "displayName": "Funnel",
   "displayOption": "FitToPage",
   "height": 1080,
-  "width": 1920
+  "width": 1920,
+  "visualInteractions": [
+    {
+      "source": "59eb3a8b1df91fcff4cc",
+      "target": "b65feedb69d0b51ccd9e",
+      "type": "NoFilter"
+    }
+  ]
 }
