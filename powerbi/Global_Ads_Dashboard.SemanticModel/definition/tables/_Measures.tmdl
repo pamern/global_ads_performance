@@ -23,6 +23,24 @@ table _Measures
 		formatString: 0.00
 		lineageTag: 99765a24-cc08-4767-9e69-dfb545359fe8
 
+	measure 'Total Clicks' =
+			
+			SUM('mart FctAdPerformance'[Clicks])
+		formatString: 0
+		lineageTag: c28963c5-a448-42ea-9fa2-6b1cc91191db
+
+	measure 'Total Conversions' =
+			
+			SUM('mart FctAdPerformance'[Conversions])
+		formatString: 0
+		lineageTag: b4640b07-05fd-4584-b0f8-815bb3820619
+
+	measure 'Total Impressions' =
+			
+			SUM('mart FctAdPerformance'[Impressions])
+		formatString: 0
+		lineageTag: 1d21d1f4-5dea-45d2-830b-7dc6a3f59d8c
+
 	measure 'Previous Period Spend' = ```
 			
 			VAR StartDate =
@@ -329,6 +347,56 @@ table _Measures
 			
 			```
 		lineageTag: 9a9c6e94-994f-4f4a-9198-2ba4c7236840
+
+	measure CTR = DIVIDE([Total Clicks], [Total Impressions])
+		formatString: 0.00%
+		displayFolder: Funnel
+		lineageTag: 93004593-70c2-45f9-967e-bc2f45ef68ec
+
+	measure 'Conversion Rate' = DIVIDE([Total Conversions], [Total Clicks])
+		formatString: 0.00%
+		displayFolder: Funnel
+		lineageTag: 6db8efba-d3b8-4f6e-919c-b587363eab48
+
+	measure CPC = DIVIDE([Total Ad Spend], [Total Clicks])
+		formatString: \$#,0.00
+		displayFolder: Funnel
+		lineageTag: ec0c77cd-3764-4815-8e74-331adfe9debf
+
+	measure CPA = DIVIDE([Total Ad Spend], [Total Conversions])
+		formatString: \$#,0.00
+		displayFolder: Funnel
+		lineageTag: 40397688-d512-445d-adaa-3cadc4891a3f
+
+	measure 'Impressions No Click %' = IF(NOT ISBLANK([CTR]), 1 - [CTR])
+		formatString: 0.00%
+		displayFolder: Funnel
+		lineageTag: a3e2c40e-6720-4a44-b2a0-a521d1d0d517
+
+	measure 'Clicks No Conversion %' = IF(NOT ISBLANK([Conversion Rate]), 1 - [Conversion Rate])
+		formatString: 0.00%
+		displayFolder: Funnel
+		lineageTag: d0a290e2-3c13-44ac-b245-0029c88897b9
+
+	measure 'Spend Growth Label' = VAR g = [Spend Growth %] RETURN IF(ISBLANK(g), "No prior-period data", FORMAT(g, "+0.0%;-0.0%;0.0%") & " vs. previous period")
+		displayFolder: Funnel
+		lineageTag: f5f98585-89b3-4dc7-a123-3011d8c6b735
+
+	measure 'Revenue Growth Label' = VAR g = [Revenue Growth %] RETURN IF(ISBLANK(g), "No prior-period data", FORMAT(g, "+0.0%;-0.0%;0.0%") & " vs. previous period")
+		displayFolder: Funnel
+		lineageTag: a0c63a21-7077-4c98-9624-b586c9dab21f
+
+	measure 'CTR Label' = "CTR " & FORMAT([CTR], "0.00%")
+		displayFolder: Funnel
+		lineageTag: 7aa0a494-b434-4ea8-afad-dd7af38d5013
+
+	measure 'Conversion Rate Label' = "Conversion Rate " & FORMAT([Conversion Rate], "0.00%")
+		displayFolder: Funnel
+		lineageTag: 7e073847-0f70-42e7-ad57-e3d39b3e0e2e
+
+	measure 'Growth Comparison Subtitle' = VAR d = DATEDIFF(MIN('mart DimDate'[Date]), MAX('mart DimDate'[Date]), DAY) + 1 RETURN IF(ISBLANK([Previous Period Spend]), "No prior-period data (data starts 01 Jan 2024)", "vs. previous " & d & " days")
+		displayFolder: Growth
+		lineageTag: c4fb039b-f322-411f-828f-43f24807422d
 
 	column Value
 		isHidden

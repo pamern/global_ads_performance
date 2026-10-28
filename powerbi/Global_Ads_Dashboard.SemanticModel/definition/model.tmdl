@@ -9,7 +9,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_ProTooling = ["DevMode"]
+annotation PBI_ProTooling = ["DevMode","MCP-PBIModeling"]
 
 annotation PBI_QueryOrder = ["mart DimCampaignType","mart DimCountry","mart DimDate","mart DimIndustry","mart FctAdPerformance","mart DimPlatform"]
 
@@ -22,6 +22,8 @@ ref table 'mart DimIndustry'
 ref table 'mart FctAdPerformance'
 ref table 'mart DimPlatform'
 ref table _Measures
+ref table 'Growth Pocket'
+ref table 'Growth Opportunity Metrics'
 
 ref cultureInfo en-US
 

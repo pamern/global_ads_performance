@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "b65feedb69d0b51ccd9e",
   "position": {
-    "x": 1129.3689392362578,
-    "y": 571.45779950817291,
+    "x": 1097,
+    "y": 653,
     "z": 7000,
-    "height": 453.06930693069307,
-    "width": 700,
+    "height": 370,
+    "width": 730,
     "tabOrder": 7000
   },
   "visual": {
@@ -577,9 +577,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#12239E'"
                     }
                   }
                 }
@@ -694,6 +693,17 @@
                 }
               }
             },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
             "transparency": {
               "expr": {
                 "Literal": {
@@ -710,14 +720,14 @@
             "top": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
+                  "Value": "12D"
                 }
               }
             },
             "bottom": {
               "expr": {
                 "Literal": {
-                  "Value": "16D"
+                  "Value": "12D"
                 }
               }
             },
@@ -800,17 +810,17 @@
                 }
               }
             },
-            "shadowSpread": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
             "shadowBlur": {
               "expr": {
                 "Literal": {
                   "Value": "3D"
+                }
+              }
+            },
+            "shadowDistance": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             },
@@ -821,10 +831,10 @@
                 }
               }
             },
-            "shadowDistance": {
+            "shadowSpread": {
               "expr": {
                 "Literal": {
-                  "Value": "1D"
+                  "Value": "0D"
                 }
               }
             }

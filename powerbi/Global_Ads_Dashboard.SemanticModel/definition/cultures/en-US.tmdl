@@ -3013,16 +3013,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "rate": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
 			          "importance": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3060,6 +3050,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "use": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
 			          }
 			        }
 			      ]
@@ -3994,175 +3994,3515 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.total_clicks": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Total Clicks"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total clicks": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "clicks": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate click": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall click": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.total_conversions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Total Conversions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total conversions": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "conversions": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate conversion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall conversion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total adaptation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total translation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total renovation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total transformation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total transfiguration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "adaptation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.total_impressions": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Total Impressions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total impressions": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "impressions": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall impression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "total impersonation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "impersonation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "total imitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "total parody": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "imitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "parody": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "total depression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "depression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth pocket": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pocket": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "compact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "short": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "small": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "portable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mini": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pocket-sized": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "little": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "growth receptacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "receptacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "growth pouch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.growth_pocket_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Growth Pocket Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth pocket name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pocket": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pocket name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth pocket nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "growth pocket title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "growth pocket label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "growth pocket tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "pocket nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "pocket title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "pocket label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "pocket tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "compact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "short": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Growth Pocket": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "growth_pocket.platform": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Platform"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "platform": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "podium": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dais": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "policy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "proposal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "manifesto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "program": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.campaign_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "CampaignType"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "campaign type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CampaignType": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "campaign category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "campaign genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "campaign manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "campaign variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "campaign brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "campaign class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.pocket_revenue": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Pocket Revenue"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pocket revenue": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pocket income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "pocket profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "pocket turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "pocket yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.pocket_ad_spend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Pocket Ad Spend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pocket ad spend": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "receptacle ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "pouch ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "compartment ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "sack ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "bag ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.pocket_ROAS": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Pocket ROAS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pocket ROAS": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ROAS": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.pocket_revenue_contribution": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Pocket Revenue Contribution"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pocket revenue contribution": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue contribution": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pocket income contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "income contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pocket profit contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pocket turnover contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pocket yield contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "profit contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "turnover contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "yield contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "pocket revenue role": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pocket revenue involvement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.pocket_spend_concentration": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Pocket Spend Concentration"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pocket spend concentration": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "receptacle spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "pouch spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "compartment spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "sack spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "bag spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "Spend Concentration": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.median_pocket_ROAS": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Median Pocket ROAS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "median pocket ROAS": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.median_spend_concentration": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Median Spend Concentration"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "median spend concentration": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "norm spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "nucleus spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "midpoint spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "middle spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "center spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "medium spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "mean spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "average spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "par spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "standard spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.pocket_campaign_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Pocket Campaign Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pocket campaign count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "campaign count": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pocket campaign amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "campaign amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Campaigns": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.pocket_revenue_response": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Pocket Revenue Response"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "pocket revenue response": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pocket income response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "income response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "pocket profit response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pocket turnover response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pocket yield response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "profit response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "turnover response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "yield response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "pocket revenue rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pocket revenue comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.median_pocket_revenue_response": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Median Pocket Revenue Response"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "median pocket revenue response": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue response": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "median pocket income response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "income response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "median pocket profit response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "median pocket turnover response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "median pocket yield response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "profit response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "turnover response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "yield response": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "median pocket revenue rejoinder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "median pocket revenue comeback": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.growth_opportunity_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Growth Opportunity Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opportunity count": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth opportunity amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "opportunity amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.total_growth_pocket_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Total Growth Pocket Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total growth pocket count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "pocket count": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth pocket count": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "total growth pocket amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "growth pocket amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "pocket amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "aggregate growth pocket count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall growth pocket count": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.growth_opportunity_revenue": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Growth Opportunity Revenue"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity revenue": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opportunity revenue": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth opportunity income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "opportunity income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "growth opportunity profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "growth opportunity turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "growth opportunity yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "opportunity profit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "opportunity turnover": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "opportunity yield": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.growth_opportunity_ad_spend": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Growth Opportunity Ad Spend"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity ad spend": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "growth chance ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth occasion ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth opening ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth break ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth prospect ad spend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.growth_opportunity_revenue_contribution": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Growth Opportunity Revenue Contribution"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity revenue contribution": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue contribution": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "opportunity revenue contribution": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth opportunity income contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "opportunity income contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "income contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "growth opportunity profit contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "growth opportunity turnover contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "growth opportunity yield contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "opportunity profit contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "opportunity turnover contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "opportunity yield contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "profit contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.growth_opportunity_spend_concentration": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Growth Opportunity Spend Concentration"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity spend concentration": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "growth chance spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth occasion spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth opening spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth break spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth prospect spend concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.growth_opportunity_ROAS": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Growth Opportunity ROAS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity ROAS": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opportunity ROAS": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.growth_opportunity_count_by_country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Growth Opportunity Count by Country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity count by country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opportunity count": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth opportunity amount by country": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "opportunity amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "growth opportunity count by nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "growth opportunity count by location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "Growth Opportunities": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.is_growth_opportunity": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Is Growth Opportunity"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is growth opportunity": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "opportunity": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth opportunity": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "is growth chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "is growth occasion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "is growth opening": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "is growth break": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "is growth prospect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "growth chance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "growth occasion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "growth opening": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "growth break": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "growth prospect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "growth_pocket.revenue_response_color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Pocket",
+			          "ConceptualProperty": "Revenue Response Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "revenue response color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "response color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "income response color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "profit response color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "turnover response color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "yield response color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "revenue response hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "response hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "revenue response tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "revenue response shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "revenue response dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "revenue response paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "growth_opportunity_metrics": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Opportunity Metrics"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity metrics": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "metrics": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "opportunity metrics": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "growth_opportunity_metrics.metric": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Opportunity Metrics",
+			          "ConceptualProperty": "Metric"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "metric": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "growth_opportunity_metrics.sort_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Opportunity Metrics",
+			          "ConceptualProperty": "SortOrder"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sort order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "SortOrder": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sort instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sort direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "sort edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "sort command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sort mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "growth_opportunity_metrics.growth_opportunity_metric_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Growth Opportunity Metrics",
+			          "ConceptualProperty": "Growth Opportunity Metric Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "growth opportunity metric value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "metric value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "opportunity metric value": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth opportunity metric assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "opportunity metric assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "metric assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "growth opportunity metric worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth opportunity metric price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth opportunity metric cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth opportunity metric charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "growth opportunity metric rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "opportunity metric worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "opportunity metric price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.ctr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CTR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ctr": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.conversion_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Conversion Rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "conversion rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "conversion degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "conversion frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "conversion percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "conversion ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "conversion quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "conversion amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.cpc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CPC"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cpc": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.cpa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cpa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.impressions_no_click_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Impressions No Click %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "impressions no click %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "impression no click percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "impression no click pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "impression number click %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Drop-off": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.clicks_no_conversion_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Clicks No Conversion %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "clicks no conversion %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "click no conversion percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "click no conversion pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "click number conversion %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Drop-off": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.spend_growth_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Spend Growth Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "spend growth label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "spend growth sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "spend growth tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "spend growth decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "spend growth name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        },
+			        {
+			          "spend development label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "spend evolution label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "spend progression label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "spend growing label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "spend progress label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "spend advance label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.revenue_growth_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Revenue Growth Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "revenue growth label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "growth label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "revenue growth sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "growth sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "revenue growth tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "revenue growth decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "growth tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "growth decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "income growth label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.CTR_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "CTR Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CTR label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ctr sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "ctr tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "ctr decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "ctr name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        },
+			        {
+			          "name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.conversion_rate_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Conversion Rate Label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "conversion rate label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "rate label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "conversion rate sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "rate sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "conversion rate tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "conversion rate decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "rate tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "rate decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "conversion rate name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "mart_DimDate_date_date_hierarchy_has_mart_DimDate_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "mart DimDate"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "mart_DimDate.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.date_hierarchy"
-			          }
-			        },
-			        "mart_DimDate.date.day": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimDate.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "mart_DimDate.date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days"
-			        }
-			      ]
-			    },
-			    "mart_DimDate_date_date_hierarchy_has_mart_DimDate_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "mart DimDate"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "mart_DimDate.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.date_hierarchy"
-			          }
-			        },
-			        "mart_DimDate.date.month": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimDate.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "mart_DimDate.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
-			        }
-			      ]
-			    },
-			    "mart_DimDate_date_date_hierarchy_has_mart_DimDate_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "mart DimDate"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "mart_DimDate.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.date_hierarchy"
-			          }
-			        },
-			        "mart_DimDate.date.quarter": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimDate.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "mart_DimDate.date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters"
-			        }
-			      ]
-			    },
-			    "mart_DimDate_date_date_hierarchy_has_mart_DimDate_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "mart DimDate"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "mart_DimDate.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.date_hierarchy"
-			          }
-			        },
-			        "mart_DimDate.date.year": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimDate.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "mart_DimDate.date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
-			        }
-			      ]
-			    },
-			    "mart_DimDate_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "mart DimDate"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "mart_DimDate.date": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date"
-			          }
-			        },
-			        "mart_DimDate.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "mart_DimDate.date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimDate.date"
-			            },
-			            "Object": {
-			              "Role": "mart_DimDate.date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "mart_FctAdPerformance_has_mart_DimPlatform": {
+			    "mart_FctAdPerformance_has_entity__measure_CTR_label": {
 			      "Binding": {
 			        "ConceptualEntity": "mart FctAdPerformance"
 			      },
@@ -4173,9 +7513,9 @@ cultureInfo en-US
 			            "Entity": "mart_FctAdPerformance"
 			          }
 			        },
-			        "mart_DimPlatform": {
+			        "entity__measure.CTR_label": {
 			          "Target": {
-			            "Entity": "mart_DimPlatform"
+			            "Entity": "entity__measure.CTR_label"
 			          }
 			        }
 			      },
@@ -4186,29 +7526,82 @@ cultureInfo en-US
 			              "Role": "mart_FctAdPerformance"
 			            },
 			            "Object": {
-			              "Role": "mart_DimPlatform"
+			              "Role": "entity__measure.CTR_label"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mart_FctAdPerformances_have_mart_DimPlatforms"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimPlatform"
-			            },
-			            "Object": {
-			              "Role": "mart_FctAdPerformance"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mart_DimPlatforms_have_mart_FctAdPerformances"
+			          "ID": "mart_FctAdPerformances_have_CTR_label"
 			        }
 			      ]
 			    },
-			    "mart_FctAdPerformance_has_mart_DimIndustry": {
+			    "entity__measure_has_revenue_growth_label": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.revenue_growth_label": {
+			          "Target": {
+			            "Entity": "entity__measure.revenue_growth_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.revenue_growth_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_revenue_growth_label"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_spend_growth_label": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.spend_growth_label": {
+			          "Target": {
+			            "Entity": "entity__measure.spend_growth_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.spend_growth_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_spend_growth_label"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_entity__measure_clicks_no_conversion_": {
 			      "Binding": {
 			        "ConceptualEntity": "mart FctAdPerformance"
 			      },
@@ -4219,9 +7612,9 @@ cultureInfo en-US
 			            "Entity": "mart_FctAdPerformance"
 			          }
 			        },
-			        "mart_DimIndustry": {
+			        "entity__measure.clicks_no_conversion_": {
 			          "Target": {
-			            "Entity": "mart_DimIndustry"
+			            "Entity": "entity__measure.clicks_no_conversion_"
 			          }
 			        }
 			      },
@@ -4232,29 +7625,16 @@ cultureInfo en-US
 			              "Role": "mart_FctAdPerformance"
 			            },
 			            "Object": {
-			              "Role": "mart_DimIndustry"
+			              "Role": "entity__measure.clicks_no_conversion_"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mart_FctAdPerformances_have_mart_DimIndustries"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimIndustry"
-			            },
-			            "Object": {
-			              "Role": "mart_FctAdPerformance"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mart_DimIndustries_have_mart_FctAdPerformances"
+			          "ID": "mart_FctAdPerformances_have_clicks_no_conversion_"
 			        }
 			      ]
 			    },
-			    "mart_FctAdPerformance_has_mart_DimDate": {
+			    "mart_FctAdPerformance_has_entity__measure_impressions_no_click_": {
 			      "Binding": {
 			        "ConceptualEntity": "mart FctAdPerformance"
 			      },
@@ -4265,9 +7645,9 @@ cultureInfo en-US
 			            "Entity": "mart_FctAdPerformance"
 			          }
 			        },
-			        "mart_DimDate": {
+			        "entity__measure.impressions_no_click_": {
 			          "Target": {
-			            "Entity": "mart_DimDate"
+			            "Entity": "entity__measure.impressions_no_click_"
 			          }
 			        }
 			      },
@@ -4278,29 +7658,16 @@ cultureInfo en-US
 			              "Role": "mart_FctAdPerformance"
 			            },
 			            "Object": {
-			              "Role": "mart_DimDate"
+			              "Role": "entity__measure.impressions_no_click_"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mart_FctAdPerformances_have_mart_DimDates"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimDate"
-			            },
-			            "Object": {
-			              "Role": "mart_FctAdPerformance"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mart_DimDates_have_mart_FctAdPerformances"
+			          "ID": "mart_FctAdPerformances_have_impressions_no_click_"
 			        }
 			      ]
 			    },
-			    "mart_FctAdPerformance_has_mart_DimCountry": {
+			    "mart_FctAdPerformance_has_entity__measure_cpa": {
 			      "Binding": {
 			        "ConceptualEntity": "mart FctAdPerformance"
 			      },
@@ -4311,9 +7678,9 @@ cultureInfo en-US
 			            "Entity": "mart_FctAdPerformance"
 			          }
 			        },
-			        "mart_DimCountry": {
+			        "entity__measure.cpa": {
 			          "Target": {
-			            "Entity": "mart_DimCountry"
+			            "Entity": "entity__measure.cpa"
 			          }
 			        }
 			      },
@@ -4324,29 +7691,16 @@ cultureInfo en-US
 			              "Role": "mart_FctAdPerformance"
 			            },
 			            "Object": {
-			              "Role": "mart_DimCountry"
+			              "Role": "entity__measure.cpa"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mart_FctAdPerformances_have_mart_DimCountries"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_DimCountry"
-			            },
-			            "Object": {
-			              "Role": "mart_FctAdPerformance"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mart_DimCountries_have_mart_FctAdPerformances"
+			          "ID": "mart_FctAdPerformances_have_cpa"
 			        }
 			      ]
 			    },
-			    "mart_FctAdPerformance_has_mart_DimCampaignType": {
+			    "mart_FctAdPerformance_has_entity__measure_cpc": {
 			      "Binding": {
 			        "ConceptualEntity": "mart FctAdPerformance"
 			      },
@@ -4357,9 +7711,9 @@ cultureInfo en-US
 			            "Entity": "mart_FctAdPerformance"
 			          }
 			        },
-			        "mart_DimCampaignType": {
+			        "entity__measure.cpc": {
 			          "Target": {
-			            "Entity": "mart_DimCampaignType"
+			            "Entity": "entity__measure.cpc"
 			          }
 			        }
 			      },
@@ -4370,25 +7724,1543 @@ cultureInfo en-US
 			              "Role": "mart_FctAdPerformance"
 			            },
 			            "Object": {
-			              "Role": "mart_DimCampaignType"
+			              "Role": "entity__measure.cpc"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mart_FctAdPerformances_have_mart_DimCampaignTypes"
+			          "ID": "mart_FctAdPerformances_have_cpc"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_entity__measure_conversion_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
 			        },
+			        "entity__measure.conversion_rate": {
+			          "Target": {
+			            "Entity": "entity__measure.conversion_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "mart_DimCampaignType"
+			              "Role": "mart_FctAdPerformance"
 			            },
 			            "Object": {
-			              "Role": "mart_FctAdPerformance"
+			              "Role": "entity__measure.conversion_rate"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "mart_DimCampaignTypes_have_mart_FctAdPerformances"
+			          "ID": "mart_FctAdPerformances_have_conversion_rate"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_entity__measure_ctr": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "entity__measure.ctr": {
+			          "Target": {
+			            "Entity": "entity__measure.ctr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.ctr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_ctr"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_opportunity_metrics_growth_opportunity_metric_value": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_opportunity_metrics.growth_opportunity_metric_value": {
+			          "Target": {
+			            "Entity": "growth_opportunity_metrics.growth_opportunity_metric_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_opportunity_metrics.growth_opportunity_metric_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_growth_opportunity_metric_value"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_opportunity_metrics_growth_opportunity_metric_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_opportunity_metrics.growth_opportunity_metric_value": {
+			          "Target": {
+			            "Entity": "growth_opportunity_metrics.growth_opportunity_metric_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_opportunity_metrics.growth_opportunity_metric_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_opportunity_metric_value"
+			        }
+			      ]
+			    },
+			    "growth_opportunity_metrics_has_growth_opportunity_metric_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Opportunity Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_opportunity_metrics": {
+			          "Target": {
+			            "Entity": "growth_opportunity_metrics"
+			          }
+			        },
+			        "growth_opportunity_metrics.growth_opportunity_metric_value": {
+			          "Target": {
+			            "Entity": "growth_opportunity_metrics.growth_opportunity_metric_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_opportunity_metrics"
+			            },
+			            "Object": {
+			              "Role": "growth_opportunity_metrics.growth_opportunity_metric_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_opportunity_metrics_have_growth_opportunity_metric_value"
+			        }
+			      ]
+			    },
+			    "growth_opportunity_metrics_has_sort_order": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Opportunity Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_opportunity_metrics": {
+			          "Target": {
+			            "Entity": "growth_opportunity_metrics"
+			          }
+			        },
+			        "growth_opportunity_metrics.sort_order": {
+			          "Target": {
+			            "Entity": "growth_opportunity_metrics.sort_order"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_opportunity_metrics"
+			            },
+			            "Object": {
+			              "Role": "growth_opportunity_metrics.sort_order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_opportunity_metrics_have_sort_orders"
+			        }
+			      ]
+			    },
+			    "growth_opportunity_metrics_has_metric": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Opportunity Metrics"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_opportunity_metrics": {
+			          "Target": {
+			            "Entity": "growth_opportunity_metrics"
+			          }
+			        },
+			        "growth_opportunity_metrics.metric": {
+			          "Target": {
+			            "Entity": "growth_opportunity_metrics.metric"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_opportunity_metrics"
+			            },
+			            "Object": {
+			              "Role": "growth_opportunity_metrics.metric"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_opportunity_metrics_have_metrics"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_revenue_response_color": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.revenue_response_color": {
+			          "Target": {
+			            "Entity": "growth_pocket.revenue_response_color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.revenue_response_color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_revenue_response_color"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_revenue_response_color": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.revenue_response_color": {
+			          "Target": {
+			            "Entity": "growth_pocket.revenue_response_color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.revenue_response_color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_revenue_response_color"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_is_growth_opportunity": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.is_growth_opportunity": {
+			          "Target": {
+			            "Entity": "growth_pocket.is_growth_opportunity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.is_growth_opportunity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_is_growth_opportunity"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_is_growth_opportunity": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.is_growth_opportunity": {
+			          "Target": {
+			            "Entity": "growth_pocket.is_growth_opportunity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.is_growth_opportunity"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_is_growth_opportunity"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_growth_opportunity_count_by_country": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_count_by_country": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_count_by_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_count_by_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_growth_opportunity_count_by_country"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_opportunity_count_by_country": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_count_by_country": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_count_by_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_count_by_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_opportunity_count_by_country"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_growth_opportunity_ROAS": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_ROAS": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_ROAS"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_ROAS"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_growth_opportunity_ROAS"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_opportunity_ROAS": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_ROAS": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_ROAS"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_ROAS"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_opportunity_ROAS"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_growth_opportunity_spend_concentration": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_spend_concentration": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_spend_concentration"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_spend_concentration"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_growth_opportunity_spend_concentration"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_opportunity_spend_concentration": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_spend_concentration": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_spend_concentration"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_spend_concentration"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_opportunity_spend_concentration"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_growth_opportunity_revenue_contribution": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_revenue_contribution": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_revenue_contribution"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_revenue_contribution"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_growth_opportunity_revenue_contribution"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_opportunity_revenue_contribution": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_revenue_contribution": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_revenue_contribution"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_revenue_contribution"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_opportunity_revenue_contribution"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_growth_opportunity_ad_spend": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_ad_spend": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_ad_spend"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_ad_spend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_growth_opportunity_ad_spend"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_opportunity_ad_spend": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_ad_spend": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_ad_spend"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_ad_spend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_opportunity_ad_spend"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_growth_opportunity_revenue": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_revenue": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_revenue"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_revenue"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_growth_opportunity_revenue"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_opportunity_revenue": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_revenue": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_revenue"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_revenue"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_opportunity_revenue"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_total_growth_pocket_count": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.total_growth_pocket_count": {
+			          "Target": {
+			            "Entity": "growth_pocket.total_growth_pocket_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.total_growth_pocket_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_total_growth_pocket_count"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_growth_opportunity_count": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_count": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_growth_opportunity_count"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_opportunity_count": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.growth_opportunity_count": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_opportunity_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_opportunity_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_opportunity_count"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_median_pocket_revenue_response": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.median_pocket_revenue_response": {
+			          "Target": {
+			            "Entity": "growth_pocket.median_pocket_revenue_response"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.median_pocket_revenue_response"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_median_pocket_revenue_response"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_median_pocket_revenue_response": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.median_pocket_revenue_response": {
+			          "Target": {
+			            "Entity": "growth_pocket.median_pocket_revenue_response"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.median_pocket_revenue_response"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_median_pocket_revenue_response"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_pocket_revenue_response": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.pocket_revenue_response": {
+			          "Target": {
+			            "Entity": "growth_pocket.pocket_revenue_response"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.pocket_revenue_response"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_pocket_revenue_response"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_pocket_campaign_count": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.pocket_campaign_count": {
+			          "Target": {
+			            "Entity": "growth_pocket.pocket_campaign_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.pocket_campaign_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_pocket_campaign_count"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_median_spend_concentration": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.median_spend_concentration": {
+			          "Target": {
+			            "Entity": "growth_pocket.median_spend_concentration"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.median_spend_concentration"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_median_spend_concentration"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_median_spend_concentration": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.median_spend_concentration": {
+			          "Target": {
+			            "Entity": "growth_pocket.median_spend_concentration"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.median_spend_concentration"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_median_spend_concentration"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_median_pocket_ROAS": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.median_pocket_ROAS": {
+			          "Target": {
+			            "Entity": "growth_pocket.median_pocket_ROAS"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.median_pocket_ROAS"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_median_pocket_ROAS"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_median_pocket_ROAS": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.median_pocket_ROAS": {
+			          "Target": {
+			            "Entity": "growth_pocket.median_pocket_ROAS"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.median_pocket_ROAS"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_median_pocket_ROAS"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_pocket_spend_concentration": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.pocket_spend_concentration": {
+			          "Target": {
+			            "Entity": "growth_pocket.pocket_spend_concentration"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.pocket_spend_concentration"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_pocket_spend_concentration"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_pocket_revenue_contribution": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.pocket_revenue_contribution": {
+			          "Target": {
+			            "Entity": "growth_pocket.pocket_revenue_contribution"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.pocket_revenue_contribution"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_pocket_revenue_contribution"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_pocket_ROAS": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.pocket_ROAS": {
+			          "Target": {
+			            "Entity": "growth_pocket.pocket_ROAS"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.pocket_ROAS"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_pocket_ROAS"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_pocket_ad_spend": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.pocket_ad_spend": {
+			          "Target": {
+			            "Entity": "growth_pocket.pocket_ad_spend"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.pocket_ad_spend"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_pocket_ad_spend"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_growth_pocket_pocket_revenue": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "growth_pocket.pocket_revenue": {
+			          "Target": {
+			            "Entity": "growth_pocket.pocket_revenue"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.pocket_revenue"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_pocket_revenue"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_campaign_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.campaign_type": {
+			          "Target": {
+			            "Entity": "growth_pocket.campaign_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.campaign_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_campaign_types"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_country": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.country": {
+			          "Target": {
+			            "Entity": "growth_pocket.country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_countries"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_platform": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.platform": {
+			          "Target": {
+			            "Entity": "growth_pocket.platform"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.platform"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_platforms"
+			        }
+			      ]
+			    },
+			    "growth_pocket_has_growth_pocket_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.growth_pocket_name": {
+			          "Target": {
+			            "Entity": "growth_pocket.growth_pocket_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Object": {
+			              "Role": "growth_pocket.growth_pocket_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_have_growth_pocket_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Name": {
+			              "Role": "growth_pocket.growth_pocket_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pocket_names_are_names_IDs_of_growth_pockets"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_entity__measure_total_impressions": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "entity__measure.total_impressions": {
+			          "Target": {
+			            "Entity": "entity__measure.total_impressions"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.total_impressions"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_total_impressions"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_entity__measure_total_conversions": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "entity__measure.total_conversions": {
+			          "Target": {
+			            "Entity": "entity__measure.total_conversions"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.total_conversions"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_total_conversions"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_entity__measure_total_clicks": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "entity__measure.total_clicks": {
+			          "Target": {
+			            "Entity": "entity__measure.total_clicks"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.total_clicks"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_total_clicks"
 			        }
 			      ]
 			    },
@@ -4422,72 +9294,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "Phrasing_measures_have_growth_alert"
-			        }
-			      ]
-			    },
-			    "mart_FctAdPerformance_has_entity__measure_previous_period_days_with_data": {
-			      "Binding": {
-			        "ConceptualEntity": "mart FctAdPerformance"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "mart_FctAdPerformance": {
-			          "Target": {
-			            "Entity": "mart_FctAdPerformance"
-			          }
-			        },
-			        "entity__measure.previous_period_days_with_data": {
-			          "Target": {
-			            "Entity": "entity__measure.previous_period_days_with_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_FctAdPerformance"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.previous_period_days_with_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mart_FctAdPerformances_have_previous_period_days_with_data"
-			        }
-			      ]
-			    },
-			    "mart_FctAdPerformance_has_entity__measure_days_with_data": {
-			      "Binding": {
-			        "ConceptualEntity": "mart FctAdPerformance"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "mart_FctAdPerformance": {
-			          "Target": {
-			            "Entity": "mart_FctAdPerformance"
-			          }
-			        },
-			        "entity__measure.days_with_data": {
-			          "Target": {
-			            "Entity": "entity__measure.days_with_data"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "mart_FctAdPerformance"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.days_with_data"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mart_FctAdPerformances_have_days_with_data"
 			        }
 			      ]
 			    },
@@ -5580,6 +10386,51 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "growth_pocket_in_country": {
+			      "Binding": {
+			        "ConceptualEntity": "Growth Pocket"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "growth_pocket": {
+			          "Target": {
+			            "Entity": "growth_pocket"
+			          }
+			        },
+			        "growth_pocket.country": {
+			          "Target": {
+			            "Entity": "growth_pocket.country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "growth_pocket.country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "growth_pocket"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "growth_pocket.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "growth_pockets_are_in_countries"
+			        }
+			      ]
+			    },
 			    "mart_DimCountry_in_country": {
 			      "Binding": {
 			        "ConceptualEntity": "mart DimCountry"
@@ -5622,6 +10473,434 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "mart_DimCountries_are_in_countries"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_entity__measure_conversion_rate_label": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "entity__measure.conversion_rate_label": {
+			          "Target": {
+			            "Entity": "entity__measure.conversion_rate_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.conversion_rate_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_conversion_rate_label"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_mart_DimCampaignType": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "mart_DimCampaignType": {
+			          "Target": {
+			            "Entity": "mart_DimCampaignType"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "mart_DimCampaignType"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_mart_DimCampaignTypes"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimCampaignType"
+			            },
+			            "Object": {
+			              "Role": "mart_FctAdPerformance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_DimCampaignTypes_have_mart_FctAdPerformances"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_mart_DimCountry": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "mart_DimCountry": {
+			          "Target": {
+			            "Entity": "mart_DimCountry"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "mart_DimCountry"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_mart_DimCountries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimCountry"
+			            },
+			            "Object": {
+			              "Role": "mart_FctAdPerformance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_DimCountries_have_mart_FctAdPerformances"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_mart_DimDate": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "mart_DimDate": {
+			          "Target": {
+			            "Entity": "mart_DimDate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "mart_DimDate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_mart_DimDates"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimDate"
+			            },
+			            "Object": {
+			              "Role": "mart_FctAdPerformance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_DimDates_have_mart_FctAdPerformances"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_mart_DimIndustry": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "mart_DimIndustry": {
+			          "Target": {
+			            "Entity": "mart_DimIndustry"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "mart_DimIndustry"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_mart_DimIndustries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimIndustry"
+			            },
+			            "Object": {
+			              "Role": "mart_FctAdPerformance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_DimIndustries_have_mart_FctAdPerformances"
+			        }
+			      ]
+			    },
+			    "mart_FctAdPerformance_has_mart_DimPlatform": {
+			      "Binding": {
+			        "ConceptualEntity": "mart FctAdPerformance"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_FctAdPerformance": {
+			          "Target": {
+			            "Entity": "mart_FctAdPerformance"
+			          }
+			        },
+			        "mart_DimPlatform": {
+			          "Target": {
+			            "Entity": "mart_DimPlatform"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_FctAdPerformance"
+			            },
+			            "Object": {
+			              "Role": "mart_DimPlatform"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_FctAdPerformances_have_mart_DimPlatforms"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimPlatform"
+			            },
+			            "Object": {
+			              "Role": "mart_FctAdPerformance"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mart_DimPlatforms_have_mart_FctAdPerformances"
+			        }
+			      ]
+			    },
+			    "mart_DimDate_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "mart DimDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_DimDate.date": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date"
+			          }
+			        },
+			        "mart_DimDate.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimDate.date"
+			            },
+			            "Object": {
+			              "Role": "mart_DimDate.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "mart_DimDate_date_date_hierarchy_has_mart_DimDate_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "mart DimDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_DimDate.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.date_hierarchy"
+			          }
+			        },
+			        "mart_DimDate.date.year": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimDate.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "mart_DimDate.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "mart_DimDate_date_date_hierarchy_has_mart_DimDate_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "mart DimDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_DimDate.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.date_hierarchy"
+			          }
+			        },
+			        "mart_DimDate.date.quarter": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimDate.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "mart_DimDate.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "mart_DimDate_date_date_hierarchy_has_mart_DimDate_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "mart DimDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_DimDate.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.date_hierarchy"
+			          }
+			        },
+			        "mart_DimDate.date.month": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimDate.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "mart_DimDate.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "mart_DimDate_date_date_hierarchy_has_mart_DimDate_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "mart DimDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "mart_DimDate.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.date_hierarchy"
+			          }
+			        },
+			        "mart_DimDate.date.day": {
+			          "Target": {
+			            "Entity": "mart_DimDate.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "mart_DimDate.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "mart_DimDate.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
 			        }
 			      ]
 			    }

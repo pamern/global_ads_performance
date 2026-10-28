@@ -4,8 +4,7 @@
   "name": "a6dcc57f678255f00804",
   "options": {
     "targetVisualNames": [],
-    "suppressDisplay": true,
-    "preserveNewVisualVisibility": true
+    "suppressDisplay": true
   },
   "explorationState": {
     "version": "1.3",
@@ -14,122 +13,9 @@
       "61a8b7aa78ed3e353c92": {
         "visualContainers": {
           "59eb3a8b1df91fcff4cc": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "5536cf88e66b489ccd38",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "mart DimDate"
-                        }
-                      },
-                      "Property": "Date"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
             "singleVisual": {
               "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "general": [
-                    {
-                      "properties": {
-                        "filter": {
-                          "filter": {
-                            "Version": 2,
-                            "From": [
-                              {
-                                "Name": "m",
-                                "Entity": "mart DimDate",
-                                "Type": 0
-                              }
-                            ],
-                            "Where": [
-                              {
-                                "Condition": {
-                                  "Comparison": {
-                                    "ComparisonKind": 2,
-                                    "Left": {
-                                      "Column": {
-                                        "Expression": {
-                                          "SourceRef": {
-                                            "Source": "m"
-                                          }
-                                        },
-                                        "Property": "Date"
-                                      }
-                                    },
-                                    "Right": {
-                                      "Literal": {
-                                        "Value": "datetime'2024-10-02T00:00:00'"
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      }
-                    }
-                  ],
-                  "data": [
-                    {
-                      "properties": {
-                        "startDate": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "datetime'2024-10-02T00:00:00'"
-                            }
-                          }
-                        },
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Between'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "orderBy": [
-                {
-                  "Direction": 1,
-                  "Expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "mart DimDate"
-                        }
-                      },
-                      "Property": "Date"
-                    }
-                  }
-                }
-              ],
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "mart DimDate"
-                        }
-                      },
-                      "Property": "Date"
-                    }
-                  }
-                ]
-              }
+              "objects": {}
             }
           },
           "6d1dc9ec959675353abf": {
@@ -1029,24 +915,7 @@
               ]
             },
             "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
+              "visualType": "advancedSlicerVisual",
               "activeProjections": {
                 "Values": [
                   {
@@ -1060,7 +929,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "objects": {}
             }
           },
           "2f0ea8457053dfe098d7": {
@@ -1139,24 +1009,7 @@
               ]
             },
             "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
+              "visualType": "advancedSlicerVisual",
               "activeProjections": {
                 "Values": [
                   {
@@ -1170,7 +1023,8 @@
                     }
                   }
                 ]
-              }
+              },
+              "objects": {}
             }
           },
           "a0e68ae0c445b098672c": {

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "67534ecd51cd3864e354",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "opQuadrantNote00001a",
   "position": {
-    "x": 79.036144578313241,
-    "y": 36.626506024096379,
-    "z": 12002,
-    "height": 67.46987951807229,
-    "width": 1748.4337349397588,
-    "tabOrder": 12002
+    "x": 944,
+    "y": 236,
+    "z": 90000,
+    "height": 28,
+    "width": 147,
+    "tabOrder": 90000
   },
   "visual": {
     "visualType": "textbox",
@@ -19,10 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "GROWTH OVERVIEW",
+                    "value": "High ROAS, low spend",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "28pt",
+                      "fontSize": "9pt",
                       "color": "#12239e"
                     }
                   }
@@ -53,6 +53,37 @@
                       "Value": "'#E5F1FD'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#12239E'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
                 }
               }
             }
