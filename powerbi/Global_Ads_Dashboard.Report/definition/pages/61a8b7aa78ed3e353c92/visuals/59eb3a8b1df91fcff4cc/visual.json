@@ -142,6 +142,13 @@
                   }
                 ]
               }
+            },
+            "responsive": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }

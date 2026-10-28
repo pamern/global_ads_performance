@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Measures.Total Impressions",
-              "nativeQueryRef": "Total Impressions"
+              "nativeQueryRef": "Total Impressions",
+              "displayName": "Impressions"
             },
             {
               "field": {
@@ -41,7 +42,8 @@
                 }
               },
               "queryRef": "_Measures.Total Clicks",
-              "nativeQueryRef": "Total Clicks"
+              "nativeQueryRef": "Total Clicks",
+              "displayName": "Clicks"
             },
             {
               "field": {
@@ -55,7 +57,8 @@
                 }
               },
               "queryRef": "_Measures.Total Conversions",
-              "nativeQueryRef": "Total Conversions"
+              "nativeQueryRef": "Total Conversions",
+              "displayName": "Conversions"
             }
           ]
         }

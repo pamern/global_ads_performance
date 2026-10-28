@@ -157,7 +157,15 @@
       ],
       "general": [
         {
-          "properties": {}
+          "properties": {
+            "responsive": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
         }
       ]
     },

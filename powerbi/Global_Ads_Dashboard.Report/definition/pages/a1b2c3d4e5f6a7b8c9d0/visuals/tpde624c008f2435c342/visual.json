@@ -137,7 +137,7 @@
             }
           },
           "selector": {
-            "id": "hover"
+            "id": "interaction:hover"
           }
         },
         {
@@ -155,7 +155,7 @@
             }
           },
           "selector": {
-            "id": "selected"
+            "id": "selection:selected"
           }
         }
       ],
@@ -207,7 +207,7 @@
             }
           },
           "selector": {
-            "id": "selected"
+            "id": "selection:selected"
           }
         }
       ],
@@ -280,7 +280,7 @@
             }
           },
           "selector": {
-            "id": "selected"
+            "id": "selection:selected"
           }
         }
       ],
