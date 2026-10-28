@@ -1,0 +1,96 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "f21050b9116ae10203d9",
+  "position": {
+    "x": 620,
+    "y": 163.33333333333334,
+    "z": 7000,
+    "height": 90,
+    "width": 435,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Growth Pocket"
+                    }
+                  },
+                  "Property": "Growth Opportunity Count"
+                }
+              },
+              "queryRef": "Growth Pocket.Growth Opportunity Count",
+              "nativeQueryRef": "Growth Opportunity Count"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Growth Pocket"
+                  }
+                },
+                "Property": "Growth Opportunity Count"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Số Growth Opportunity'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0bffef37d39180312545",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Growth Pocket"
+              }
+            },
+            "Property": "Growth Opportunity Count"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

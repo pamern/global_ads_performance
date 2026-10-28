@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 556.1661604192916,
+            "y": 507.95054015474335
+          },
+          "nodeIndex": "mart DimCampaignType",
+          "nodeLineageTag": "c6f15030-1f94-4f69-ad25-d86195f4aa15",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 168.7912543904273
+          },
+          "nodeIndex": "mart DimCountry",
+          "nodeLineageTag": "c2751979-a82b-4510-8b47-cbe69e69f69b",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 137.75945349556082,
+            "y": 507.96238342390552
+          },
+          "nodeIndex": "mart DimDate",
+          "nodeLineageTag": "8dd5d14e-96eb-4cf9-aea3-6b05e9d467b5",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 618.46307676929518,
+            "y": 128.16153855500625
+          },
+          "nodeIndex": "mart DimIndustry",
+          "nodeLineageTag": "926814fc-a546-489c-8678-157d2daeb4c9",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 341.41346234794969,
+            "y": -50
+          },
+          "nodeIndex": "mart DimPlatform",
+          "nodeLineageTag": "4a7dd92c-49eb-45f5-826d-4537f328ffc8",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 334.24134114748369,
+            "y": 157.76980273522452
+          },
+          "nodeIndex": "mart FctAdPerformance",
+          "nodeLineageTag": "65fbb1e9-cb49-4953-8494-df5bd8cffbf1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 852.46307676929518,
+            "y": 302.98119171195276
+          },
+          "nodeIndex": "Growth Pocket",
+          "nodeLineageTag": "9eed91c9-d585-460b-8d02-ed7700dd0eea",
+          "size": {
+            "height": 641.06024096385534,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1103.4269321909819,
+            "y": 304.49059585597632
+          },
+          "nodeIndex": "Growth Opportunity Metrics",
+          "nodeLineageTag": "d899ba4f-a494-436d-bf5f-843c75398320",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 64.843750000000043,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

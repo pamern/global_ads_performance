@@ -11,5 +11,18 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
+annotation PBI_QueryOrder = ["mart FctAdPerformance","mart DimPlatform","mart DimIndustry","mart DimDate","mart DimCampaignType","mart DimCountry"]
+
+ref table 'mart FctAdPerformance'
+ref table 'mart DimPlatform'
+ref table 'mart DimIndustry'
+ref table 'mart DimDate'
+ref table DateTableTemplate_7d0e94c6-fef9-4bef-bc4a-d95246815240
+ref table LocalDateTable_a60e1dd7-0ad2-40f4-8e95-0787cb4e446b
+ref table 'mart DimCampaignType'
+ref table 'mart DimCountry'
+ref table 'Growth Pocket'
+ref table 'Growth Opportunity Metrics'
+
 ref cultureInfo en-US
 

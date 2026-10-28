@@ -1,0 +1,25 @@
+relationship aaad7890-c495-40cb-8fbc-279d1fdc39dd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'mart DimDate'.Date
+	toColumn: LocalDateTable_a60e1dd7-0ad2-40f4-8e95-0787cb4e446b.Date
+
+relationship AutoDetected_28a5eed0-82f2-48c7-9482-f3b557c3aecc
+	fromColumn: 'mart FctAdPerformance'.DateKey
+	toColumn: 'mart DimDate'.DateKey
+
+relationship AutoDetected_d03521f7-dfbc-4807-a799-d0b076f88e51
+	fromColumn: 'mart FctAdPerformance'.PlatformKey
+	toColumn: 'mart DimPlatform'.PlatformKey
+
+relationship AutoDetected_5cee5cc8-4715-4dc2-b928-89991b948b56
+	fromColumn: 'mart FctAdPerformance'.CampaignTypeKey
+	toColumn: 'mart DimCampaignType'.CampaignTypeKey
+
+relationship AutoDetected_ac9f1db9-641c-4a63-8b29-37f7f891e798
+	fromColumn: 'mart FctAdPerformance'.IndustryKey
+	toColumn: 'mart DimIndustry'.IndustryKey
+
+relationship AutoDetected_01a20ade-350f-4196-9ac4-66d74280f5e7
+	fromColumn: 'mart FctAdPerformance'.CountryKey
+	toColumn: 'mart DimCountry'.CountryKey
+

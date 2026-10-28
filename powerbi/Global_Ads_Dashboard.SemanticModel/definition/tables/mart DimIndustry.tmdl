@@ -1,0 +1,29 @@
+table 'mart DimIndustry'
+	lineageTag: 926814fc-a546-489c-8678-157d2daeb4c9
+
+	column IndustryKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 7728c03a-b2f9-4b5b-a271-9f4e27698603
+		summarizeBy: none
+		sourceColumn: IndustryKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Industry
+		dataType: string
+		lineageTag: 2b01547a-4e76-4a90-99be-f7924b921aa8
+		summarizeBy: none
+		sourceColumn: Industry
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'mart DimIndustry' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    mart_DimIndustry = Source{[Schema="mart",Item="DimIndustry"]}[Data]
+				in
+				    mart_DimIndustry
+

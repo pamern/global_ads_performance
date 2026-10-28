@@ -1,0 +1,64 @@
+table 'Growth Opportunity Metrics'
+	lineageTag: d899ba4f-a494-436d-bf5f-843c75398320
+
+	measure 'Growth Opportunity Metric Value' =
+			
+			VAR _Metric =
+			    SELECTEDVALUE(
+			        'Growth Opportunity Metrics'[Metric]
+			    )
+			RETURN
+			    SWITCH(
+			        _Metric,
+			        "Revenue Contribution",
+			            FORMAT(
+			                [Growth Opportunity Revenue Contribution],
+			                "0.00%"
+			            ),
+			        "Spend Concentration",
+			            FORMAT(
+			                [Growth Opportunity Spend Concentration],
+			                "0.0%"
+			            ),
+			        "ROAS",
+			            FORMAT(
+			                [Growth Opportunity ROAS],
+			                "0.00"
+			            ),
+			        BLANK()
+			    )
+		lineageTag: 91f8fdaa-2fc6-4de3-b17e-b913c7d175c7
+
+	column Metric
+		lineageTag: ae62b3e6-1ce3-4172-a9d7-e1bc590a7590
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Metric]
+
+		annotation SummarizationSetBy = Automatic
+
+	column SortOrder
+		formatString: 0
+		lineageTag: 536f8e46-9a6d-4dc4-b92b-a96f40074aa3
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [SortOrder]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Growth Opportunity Metrics' = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "Metric", STRING,
+				    "SortOrder", INTEGER,
+				    {
+				        {"Revenue Contribution", 1},
+				        {"Spend Concentration", 2},
+				        {"ROAS", 3}
+				    }
+				)
+
+	annotation PBI_Id = d93bd7a485b34160a4a63067b0cef6fb
+

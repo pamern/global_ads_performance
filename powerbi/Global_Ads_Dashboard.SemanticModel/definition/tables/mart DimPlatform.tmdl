@@ -1,0 +1,29 @@
+table 'mart DimPlatform'
+	lineageTag: 4a7dd92c-49eb-45f5-826d-4537f328ffc8
+
+	column PlatformKey
+		dataType: int64
+		formatString: 0
+		lineageTag: ec2bdf77-bd22-4a86-ab1e-a77b1a5f9e7c
+		summarizeBy: none
+		sourceColumn: PlatformKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Platform
+		dataType: string
+		lineageTag: 9af681db-a674-4bab-821e-a925128d7155
+		summarizeBy: none
+		sourceColumn: Platform
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'mart DimPlatform' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    mart_DimPlatform = Source{[Schema="mart",Item="DimPlatform"]}[Data]
+				in
+				    mart_DimPlatform
+

@@ -1,0 +1,228 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "704063e40c5a80490483",
+  "position": {
+    "x": 622.5,
+    "y": 702.5,
+    "z": 10001,
+    "height": 297.5,
+    "width": 1197.5,
+    "tabOrder": 10001
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Growth Pocket"
+                    }
+                  },
+                  "Property": "Growth Pocket Name"
+                }
+              },
+              "queryRef": "Growth Pocket.Growth Pocket Name",
+              "nativeQueryRef": "Growth Pocket Name"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Growth Pocket"
+                    }
+                  },
+                  "Property": "Pocket ROAS"
+                }
+              },
+              "queryRef": "Growth Pocket.Pocket ROAS",
+              "nativeQueryRef": "Pocket ROAS"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Growth Pocket"
+                    }
+                  },
+                  "Property": "Pocket Revenue Contribution"
+                }
+              },
+              "queryRef": "Growth Pocket.Pocket Revenue Contribution",
+              "nativeQueryRef": "Pocket Revenue Contribution"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Growth Pocket"
+                    }
+                  },
+                  "Property": "Pocket Spend Concentration"
+                }
+              },
+              "queryRef": "Growth Pocket.Pocket Spend Concentration",
+              "nativeQueryRef": "Pocket Spend Concentration"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Growth Pocket"
+                    }
+                  },
+                  "Property": "Pocket Revenue Response"
+                }
+              },
+              "queryRef": "Growth Pocket.Pocket Revenue Response",
+              "nativeQueryRef": "Pocket Revenue Response"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Growth Pocket"
+                    }
+                  },
+                  "Property": "Pocket Campaign Count"
+                }
+              },
+              "queryRef": "Growth Pocket.Pocket Campaign Count",
+              "nativeQueryRef": "Pocket Campaign Count"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Growth Pocket"
+                  }
+                },
+                "Property": "Growth Pocket Name"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "abc0f4d96c00ac53d03b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Growth Pocket"
+              }
+            },
+            "Property": "Growth Pocket Name"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e0f84c2572a9a68c9107",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Growth Pocket"
+              }
+            },
+            "Property": "Pocket ROAS"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a67dd9367e294da595ee",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Growth Pocket"
+              }
+            },
+            "Property": "Pocket Revenue Contribution"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "344801d6d92eada66262",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Growth Pocket"
+              }
+            },
+            "Property": "Pocket Spend Concentration"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "24ecfcee89e9d02868d8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Growth Pocket"
+              }
+            },
+            "Property": "Pocket Revenue Response"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3ffc029d04bbd00bb0ea",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Growth Pocket"
+              }
+            },
+            "Property": "Pocket Campaign Count"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
