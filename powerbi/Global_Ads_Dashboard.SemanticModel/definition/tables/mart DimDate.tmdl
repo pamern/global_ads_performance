@@ -1,0 +1,93 @@
+table 'mart DimDate'
+	lineageTag: e00dde14-0cc8-47be-b89d-872ec23e800c
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: d68faa55-8bdb-44b9-ba54-76d3739d2c58
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e3085f69-8a67-453b-8de2-9b1402316864
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 84129fd3-f54f-489f-81f2-885dada22bb1
+			defaultHierarchy: LocalDateTable_8e8c867a-329a-47ea-8415-ed1adca789bf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 8d64ece1-5c39-46e8-a70a-bd3144868932
+		summarizeBy: sum
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d48594b-aa65-4a02-a7f2-2024b261df15
+		summarizeBy: sum
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		dataType: string
+		lineageTag: 09576cdf-abfd-447d-ace5-915e6adc6b4c
+		summarizeBy: none
+		sourceColumn: MonthName
+		sortByColumn: Month
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: eab3cd65-a60e-4abc-8785-ca613eabbd5b
+		summarizeBy: sum
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 32f1ea56-afe3-496b-94ae-38c613c92293
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterLabel = ```
+			"Q" & 'mart DimDate'[Quarter]
+			
+			```
+		lineageTag: f96a559b-854d-4f7b-8a8e-a34671dd6247
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'mart DimDate' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    mart_DimDate = Source{[Schema="mart",Item="DimDate"]}[Data]
+				in
+				    mart_DimDate
+
