@@ -68,3 +68,40 @@ Cả local/dev dùng `staging`, `intermediate`, `mart`, `mapping`; Raw vẫn là
 ## PascalCase ở Mart
 
 Tên bảng/cột vật lý Mart chuyển sang PascalCase; tên model và `ref()` giữ nguyên. Tests và `verify_warehouse.py` dùng quoted identifiers tương ứng. Các báo cáo JSON thể hiện kết quả với tên bảng mới.
+
+## DSS Input Mart — bổ sung 21/10/2026
+
+Phạm vi bước 3: `dss_monthly` → `mart."DssMonthly"`, một dòng cho mỗi Google/Meta/TikTok × tháng năm 2024. Không thay đổi kết quả kiểm thử warehouse đã ghi nhận ngày 20/10 ở trên; các kết quả đó chưa bao gồm DSS.
+
+| Test | Điều kiện vi phạm |
+|---|---|
+| Generic NOT NULL / accepted_values | Thiếu trường bắt buộc hoặc platform khác Google/Meta/TikTok |
+| `dss_monthly_grain` | Trùng Platform × Month, thiếu bất kỳ trạng thái nào trong 3 × 12, hoặc có trạng thái ngoài tập kỳ vọng |
+| `dss_monthly_validity` | Nguồn năm 2024 có platform không hợp lệ, measure NULL/âm hoặc tiền NaN/Infinity; tổng spend <= 0, measures/rates không hợp lệ, hoặc rate khác ratio-of-sums |
+| `dss_monthly_reconciliation` | Thiếu/thừa nhóm hoặc SUM của AdSpend/Revenue/Impressions/Conversions khác BI Fact kết hợp DimDate/DimPlatform, đối chiếu NUMERIC chính xác |
+| `dss_monthly_ratio_of_sums` (unit) | Hai dòng có spend khác nhau không cho tỷ lệ pooled đúng, chia 0 không ra NULL, hoặc lọc năm/platform và nhóm tháng sai |
+
+Rates NULL khi tổng spend bằng 0 là hành vi SQL chủ đích; NOT NULL và validity vẫn báo ERROR để chặn input chưa sẵn sàng cho DSS. Không dùng ngưỡng tùy ý hoặc ép dữ liệu lỗi thành 0. Các tests DSS đều có severity ERROR theo mặc định.
+
+Chạy sau khi được phép thực thi model, từ repository root (upstream và BI Mart phải tồn tại):
+
+```bash
+uv run python scripts/dbt_warehouse.py build --target local --select dss_monthly
+uv run python scripts/dbt_warehouse.py test --target local --select dss_monthly
+```
+
+Tại thời điểm triển khai bước 3 ban đầu, theo yêu cầu **chưa chạy model dbt, unit tests hoặc data tests**. Chỉ kiểm tra parse cấu hình offline; parse không chứng minh SQL chạy đúng trên PostgreSQL hoặc dữ liệu thực tế đủ 36 trạng thái. Chưa có kết quả đối soát database cho DSS.
+
+## Python DSS Engine — 21/10/2026
+
+Engine giữ nguyên `DssMonthly`; `dss/engine.py` xử lý tính toán, `dss/storage.py` phụ trách cấu hình/transaction, `scripts/run_dss.py` điều phối local/dev. Dependencies numpy/scipy là runtime; input/output schema được cấu hình tường minh. Xem [DSS README](../../dss/README.md).
+
+Đã chạy `NEXORA_DSS_DB_TEST=1 uv run python -m unittest discover -s tests -v`: **18 PASS, không skip** trên local. Tests gồm target/TLS/loopback guards, thiếu/trùng/invalid input, grid/simplex/hull, baseline pooled, simulation, funnel, Maximin/tie-break/fallback, hull suy biến, sửa future data không thay allocation fold đầu, sensitivity, summary/detail integrity, fingerprint, repeated writes và rollback giữa lúc ghi. Test POC thực thi lại code notebook từ dữ liệu CSV, đối chiếu baseline/candidate, candidate counts, sáu folds OOT, cả bốn benchmarks và sensitivity; không dùng saved outputs làm đáp án.
+
+Đã chạy CLI local hai lần trên bản code cuối: cùng run_id, lần hai reuse; mỗi run có 36 historical rows, 96 allocation rows, 54 scenario rows, 24 validation rows, 4 sensitivity rows. Không có nhóm trùng theo grain; execution log thêm 2 dòng có chủ đích. Chụp và so sánh toàn bộ dòng của các bảng/view thuộc raw/staging/intermediate/mart/mapping trước/sau: không thay đổi. Schema test trong integration đã rollback, không giữ lại.
+
+Kết quả local: 5.151 grid points, 104 trong hull, 32 qua funnel; selected shares Google 49%, Meta 21%, TikTok 30%. Full-sample worst/median/best simulated revenue uplift ~3,069% / 4,233% / 5,457%; OOT mean ~6,787%; break-even deterioration ~6,122%. Đây là simulation/sensitivity, không phải causal uplift hoặc dự báo chắc chắn. DSS chuyển budget nhiều hơn matched benchmark; không suy diễn mean uplift difference thành lợi ích độc lập của selector.
+
+Bằng chứng máy đọc: [dss/verification_local.json](../../dss/verification_local.json). Các kết quả DSS này không thay thế báo cáo dbt ngày 20/10; đợt triển khai Engine không chạy lại dbt. Slice consistency/row-level diagnostics trong POC không tái tạo được từ Monthly Mart và chưa triển khai.
+
+Dev preflight chỉ đọc: kết nối thành công qua Supabase pooler, nhưng chưa có `mart."DssMonthly"`; dừng trước khi ghi, chưa chạy Engine/output dev. Script đã hỗ trợ username định tuyến của shared pooler và kiểm tra IPv4/IPv6 CIDR của server; có tests riêng. Cần build DSS Monthly trên dev theo quy trình README trước khi chạy `run_dss.py --target dev`.
