@@ -1,0 +1,29 @@
+table 'mart DimCampaignType'
+	lineageTag: f733be19-ffb1-4203-ab45-93ce151f3d73
+
+	column CampaignTypeKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 65634e2b-d0b1-4c00-a6c3-a5ce44cc7757
+		summarizeBy: none
+		sourceColumn: CampaignTypeKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CampaignType
+		dataType: string
+		lineageTag: 59d10938-202e-4124-8454-f1f03d94084c
+		summarizeBy: none
+		sourceColumn: CampaignType
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'mart DimCampaignType' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    mart_DimCampaignType = Source{[Schema="mart",Item="DimCampaignType"]}[Data]
+				in
+				    mart_DimCampaignType
+

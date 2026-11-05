@@ -1,0 +1,416 @@
+table _Measures
+	lineageTag: 5ee649e1-3f33-4fd0-832b-3d2ef9b280d3
+
+	measure 'Total Ad Spend' =
+			
+			SUM('mart FctAdPerformance'[AdSpend])
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: dbd7f833-445c-4549-bf0f-da4416486826
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Total Revenue' =
+			
+			SUM('mart FctAdPerformance'[Revenue])
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: d683156f-16d6-4dba-8548-01f27bfdc9bc
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure ROAS =
+			
+			DIVIDE([Total Revenue], [Total Ad Spend])
+		formatString: 0.00
+		lineageTag: 99765a24-cc08-4767-9e69-dfb545359fe8
+
+	measure 'Total Clicks' =
+			
+			SUM('mart FctAdPerformance'[Clicks])
+		formatString: 0
+		lineageTag: c28963c5-a448-42ea-9fa2-6b1cc91191db
+
+	measure 'Total Conversions' =
+			
+			SUM('mart FctAdPerformance'[Conversions])
+		formatString: 0
+		lineageTag: b4640b07-05fd-4584-b0f8-815bb3820619
+
+	measure 'Total Impressions' =
+			
+			SUM('mart FctAdPerformance'[Impressions])
+		formatString: 0
+		lineageTag: 1d21d1f4-5dea-45d2-830b-7dc6a3f59d8c
+
+	measure 'Previous Period Spend' = ```
+			
+			VAR StartDate =
+			    MIN('mart DimDate'[Date])
+			
+			VAR EndDate =
+			    MAX('mart DimDate'[Date])
+			
+			VAR DaysSelected =
+			    DATEDIFF(StartDate, EndDate, DAY) + 1
+			
+			VAR PreviousStart =
+			    StartDate - DaysSelected
+			
+			VAR PreviousEnd =
+			    StartDate - 1
+			
+			VAR FirstAvailableDate =
+			    CALCULATE(
+			        MIN('mart DimDate'[Date]),
+			        REMOVEFILTERS('mart DimDate'),
+			        REMOVEFILTERS('mart DimPlatform'),
+			        REMOVEFILTERS('mart DimCampaignType'),
+			        REMOVEFILTERS('mart DimIndustry'),
+			        REMOVEFILTERS('mart DimCountry')
+			    )
+			
+			VAR LastAvailableDate =
+			    CALCULATE(
+			        MAX('mart DimDate'[Date]),
+			        REMOVEFILTERS('mart DimDate'),
+			        REMOVEFILTERS('mart DimPlatform'),
+			        REMOVEFILTERS('mart DimCampaignType'),
+			        REMOVEFILTERS('mart DimIndustry'),
+			        REMOVEFILTERS('mart DimCountry')
+			    )
+			
+			RETURN
+			    IF(
+			        ISBLANK(StartDate)
+			            || ISBLANK(EndDate)
+			            || PreviousStart < FirstAvailableDate
+			            || PreviousEnd > LastAvailableDate,
+			        BLANK(),
+			        CALCULATE(
+			            [Total Ad Spend],
+			            REMOVEFILTERS('mart DimDate'),
+			            DATESBETWEEN(
+			                'mart DimDate'[Date],
+			                PreviousStart,
+			                PreviousEnd
+			            )
+			        )
+			    )
+			
+			```
+		lineageTag: 8cab5aa3-1a6b-4836-a7d0-6c0599d65d0b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Previous Period Revenue' = ```
+			
+			VAR StartDate =
+			    MIN('mart DimDate'[Date])
+			
+			VAR EndDate =
+			    MAX('mart DimDate'[Date])
+			
+			VAR DaysSelected =
+			    DATEDIFF(StartDate, EndDate, DAY) + 1
+			
+			VAR PreviousStart =
+			    StartDate - DaysSelected
+			
+			VAR PreviousEnd =
+			    StartDate - 1
+			
+			VAR FirstAvailableDate =
+			    CALCULATE(
+			        MIN('mart DimDate'[Date]),
+			        REMOVEFILTERS('mart DimDate'),
+			        REMOVEFILTERS('mart DimPlatform'),
+			        REMOVEFILTERS('mart DimCampaignType'),
+			        REMOVEFILTERS('mart DimIndustry'),
+			        REMOVEFILTERS('mart DimCountry')
+			    )
+			
+			VAR LastAvailableDate =
+			    CALCULATE(
+			        MAX('mart DimDate'[Date]),
+			        REMOVEFILTERS('mart DimDate'),
+			        REMOVEFILTERS('mart DimPlatform'),
+			        REMOVEFILTERS('mart DimCampaignType'),
+			        REMOVEFILTERS('mart DimIndustry'),
+			        REMOVEFILTERS('mart DimCountry')
+			    )
+			
+			RETURN
+			    IF(
+			        ISBLANK(StartDate)
+			            || ISBLANK(EndDate)
+			            || PreviousStart < FirstAvailableDate
+			            || PreviousEnd > LastAvailableDate,
+			        BLANK(),
+			        CALCULATE(
+			            [Total Revenue],
+			            REMOVEFILTERS('mart DimDate'),
+			            DATESBETWEEN(
+			                'mart DimDate'[Date],
+			                PreviousStart,
+			                PreviousEnd
+			            )
+			        )
+			    )
+			
+			```
+		lineageTag: a8061ef9-a6a1-4d4f-930c-01790b4b4cae
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Spend Growth %' = ```
+			
+			VAR PreviousSpend = [Previous Period Spend]
+			RETURN
+			    IF(
+			        ISBLANK(PreviousSpend) || PreviousSpend = 0,
+			        BLANK(),
+			        DIVIDE(
+			            [Total Ad Spend] - PreviousSpend,
+			            PreviousSpend
+			        )
+			    )
+			
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 6a85b052-d976-4035-9bbb-fffad2913d8f
+
+	measure 'Revenue Growth %' = ```
+			
+			VAR PreviousRevenue =
+			    [Previous Period Revenue]
+			
+			RETURN
+			    IF(
+			        ISBLANK(PreviousRevenue)
+			            || PreviousRevenue = 0,
+			        BLANK(),
+			        DIVIDE(
+			            [Total Revenue] - PreviousRevenue,
+			            PreviousRevenue
+			        )
+			    )
+			
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: aceb0305-ecae-4869-8504-a01dc5c4a6b9
+
+	measure 'Period Spend Growth %' = ```
+			
+			VAR CurrentStart =
+			    MIN('mart DimDate'[Date])
+			
+			VAR PreviousStart =
+			    SWITCH(
+			        TRUE(),
+			        ISINSCOPE('mart DimDate'[MonthName]),
+			            EDATE(
+			                DATE(
+			                    YEAR(CurrentStart),
+			                    MONTH(CurrentStart),
+			                    1
+			                ),
+			                -1
+			            ),
+			        ISINSCOPE('mart DimDate'[QuarterLabel]),
+			            EDATE(
+			                DATE(
+			                    YEAR(CurrentStart),
+			                    MONTH(CurrentStart),
+			                    1
+			                ),
+			                -3
+			            ),
+			        BLANK()
+			    )
+			
+			VAR PreviousEnd =
+			    CurrentStart - 1
+			
+			VAR PreviousSpend =
+			    IF(
+			        NOT ISBLANK(PreviousStart),
+			        CALCULATE(
+			            [Total Ad Spend],
+			            REMOVEFILTERS('mart DimDate'),
+			            DATESBETWEEN(
+			                'mart DimDate'[Date],
+			                PreviousStart,
+			                PreviousEnd
+			            )
+			        )
+			    )
+			
+			RETURN
+			    IF(
+			        ISBLANK(PreviousSpend)
+			            || PreviousSpend = 0,
+			        BLANK(),
+			        DIVIDE(
+			            [Total Ad Spend] - PreviousSpend,
+			            PreviousSpend
+			        )
+			    )
+			
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 7401b00f-23fb-4c72-af59-4dc9204a9eff
+
+	measure 'Period Revenue Growth %' = ```
+			
+			VAR CurrentStart =
+			    MIN('mart DimDate'[Date])
+			
+			VAR PreviousStart =
+			    SWITCH(
+			        TRUE(),
+			        ISINSCOPE('mart DimDate'[MonthName]),
+			            EDATE(
+			                DATE(
+			                    YEAR(CurrentStart),
+			                    MONTH(CurrentStart),
+			                    1
+			                ),
+			                -1
+			            ),
+			        ISINSCOPE('mart DimDate'[QuarterLabel]),
+			            EDATE(
+			                DATE(
+			                    YEAR(CurrentStart),
+			                    MONTH(CurrentStart),
+			                    1
+			                ),
+			                -3
+			            ),
+			        BLANK()
+			    )
+			
+			VAR PreviousEnd =
+			    CurrentStart - 1
+			
+			VAR PreviousRevenue =
+			    IF(
+			        NOT ISBLANK(PreviousStart),
+			        CALCULATE(
+			            [Total Revenue],
+			            REMOVEFILTERS('mart DimDate'),
+			            DATESBETWEEN(
+			                'mart DimDate'[Date],
+			                PreviousStart,
+			                PreviousEnd
+			            )
+			        )
+			    )
+			
+			RETURN
+			    IF(
+			        ISBLANK(PreviousRevenue)
+			            || PreviousRevenue = 0,
+			        BLANK(),
+			        DIVIDE(
+			            [Total Revenue] - PreviousRevenue,
+			            PreviousRevenue
+			        )
+			    )
+			
+			```
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 2bc03d16-6082-4fb6-a86c-047d23a19831
+
+	measure 'Growth Alert' = ```
+			
+			VAR RevenueGrowth = [Revenue Growth %]
+			VAR SpendGrowth = [Spend Growth %]
+			
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			
+			        ISBLANK(RevenueGrowth)
+			            || ISBLANK(SpendGrowth),
+			        "⚪ N/A | Previous period unavailable",
+			
+			        SpendGrowth > 0 && RevenueGrowth < 0,
+			        "🔴 High Risk | Spend increased while revenue declined",
+			
+			        RevenueGrowth < 0,
+			        "🟠 Warning | Revenue declined vs. previous period",
+			
+			        RevenueGrowth > 0 && SpendGrowth > RevenueGrowth,
+			        "🟡 Watch | Spend growing faster than revenue",
+			
+			        "🟢 Positive | No growth warning triggered"
+			    )
+			
+			```
+		lineageTag: 9a9c6e94-994f-4f4a-9198-2ba4c7236840
+
+	measure CTR = DIVIDE([Total Clicks], [Total Impressions])
+		formatString: 0.00%
+		displayFolder: Funnel
+		lineageTag: 93004593-70c2-45f9-967e-bc2f45ef68ec
+
+	measure 'Conversion Rate' = DIVIDE([Total Conversions], [Total Clicks])
+		formatString: 0.00%
+		displayFolder: Funnel
+		lineageTag: 6db8efba-d3b8-4f6e-919c-b587363eab48
+
+	measure CPC = DIVIDE([Total Ad Spend], [Total Clicks])
+		formatString: \$#,0.00
+		displayFolder: Funnel
+		lineageTag: ec0c77cd-3764-4815-8e74-331adfe9debf
+
+	measure CPA = DIVIDE([Total Ad Spend], [Total Conversions])
+		formatString: \$#,0.00
+		displayFolder: Funnel
+		lineageTag: 40397688-d512-445d-adaa-3cadc4891a3f
+
+	measure 'Impressions No Click %' = IF(NOT ISBLANK([CTR]), 1 - [CTR])
+		formatString: 0.00%
+		displayFolder: Funnel
+		lineageTag: a3e2c40e-6720-4a44-b2a0-a521d1d0d517
+
+	measure 'Clicks No Conversion %' = IF(NOT ISBLANK([Conversion Rate]), 1 - [Conversion Rate])
+		formatString: 0.00%
+		displayFolder: Funnel
+		lineageTag: d0a290e2-3c13-44ac-b245-0029c88897b9
+
+	measure 'Spend Growth Label' = VAR g = [Spend Growth %] RETURN IF(ISBLANK(g), "No prior-period data", FORMAT(g, "+0.0%;-0.0%;0.0%") & " vs. previous period")
+		displayFolder: Funnel
+		lineageTag: f5f98585-89b3-4dc7-a123-3011d8c6b735
+
+	measure 'Revenue Growth Label' = VAR g = [Revenue Growth %] RETURN IF(ISBLANK(g), "No prior-period data", FORMAT(g, "+0.0%;-0.0%;0.0%") & " vs. previous period")
+		displayFolder: Funnel
+		lineageTag: a0c63a21-7077-4c98-9624-b586c9dab21f
+
+	measure 'CTR Label' = "CTR " & FORMAT([CTR], "0.00%")
+		displayFolder: Funnel
+		lineageTag: 7aa0a494-b434-4ea8-afad-dd7af38d5013
+
+	measure 'Conversion Rate Label' = "Conversion Rate " & FORMAT([Conversion Rate], "0.00%")
+		displayFolder: Funnel
+		lineageTag: 7e073847-0f70-42e7-ad57-e3d39b3e0e2e
+
+	measure 'Growth Comparison Subtitle' = VAR d = DATEDIFF(MIN('mart DimDate'[Date]), MAX('mart DimDate'[Date]), DAY) + 1 RETURN IF(ISBLANK([Previous Period Spend]), "No prior-period data (data starts 01 Jan 2024)", "vs. previous " & d & " days")
+		displayFolder: Growth
+		lineageTag: c4fb039b-f322-411f-828f-43f24807422d
+
+	column Value
+		isHidden
+		formatString: 0
+		lineageTag: ac03d321-49c9-4c59-b137-5bb1d69eded9
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source = { BLANK() }
+
+	annotation PBI_Id = 6fc586a7c8924a74826dbfd57b49d532
+

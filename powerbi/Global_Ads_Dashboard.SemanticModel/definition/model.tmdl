@@ -1,0 +1,29 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode","MCP-PBIModeling"]
+
+annotation PBI_QueryOrder = ["mart DimCampaignType","mart DimCountry","mart DimDate","mart DimIndustry","mart FctAdPerformance","mart DimPlatform"]
+
+ref table 'mart DimCampaignType'
+ref table 'mart DimCountry'
+ref table 'mart DimDate'
+ref table DateTableTemplate_41c8c54e-fedb-4dc3-b567-668af458d950
+ref table LocalDateTable_8e8c867a-329a-47ea-8415-ed1adca789bf
+ref table 'mart DimIndustry'
+ref table 'mart FctAdPerformance'
+ref table 'mart DimPlatform'
+ref table _Measures
+ref table 'Growth Pocket'
+ref table 'Growth Opportunity Metrics'
+
+ref cultureInfo en-US
+
