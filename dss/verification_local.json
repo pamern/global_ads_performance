@@ -1,0 +1,102 @@
+{
+  "verified_at": "2026-10-21T10:28:07.033048+07:00",
+  "target": "local",
+  "run_id": "d764e263-9585-5a10-9660-a9f936dd8732",
+  "execution_reused": true,
+  "input_rows": 36,
+  "summary": {
+    "grid_candidates": 5151,
+    "supported_candidates": 104,
+    "eligible_candidates": 32,
+    "candidate_found": true,
+    "simulation_budget": 949344.7466666667,
+    "moved_share": 0.0636646181613322,
+    "moved_budget": 60439.67079999999,
+    "worst_revenue_uplift": 0.030685361755017126,
+    "median_revenue_uplift": 0.04233317682123183,
+    "best_revenue_uplift": 0.05457343822764127,
+    "historical_win_rate": 1.0,
+    "worst_impression_uplift": 0.035489348595045156,
+    "worst_conversion_uplift": 0.030668742729657916,
+    "break_even_deterioration_pct": 6.122476966321864,
+    "oot_win_rate": 1.0,
+    "oot_mean_uplift": 0.06787110707697656,
+    "oot_median_uplift": 0.062005406249560524,
+    "oot_worst_uplift": 0.04282447182059701,
+    "matched_mean_uplift": 0.049097456943074845,
+    "matched_median_uplift": 0.04991396127862069,
+    "matched_worst_uplift": 0.028095805098543147,
+    "paired_folds": 6,
+    "folds_dss_beats_matched": 6,
+    "mean_uplift_difference": 0.018773650133901715,
+    "mean_dss_moved_share": 0.1041273302238923,
+    "mean_matched_moved_share": 0.056666666666666664,
+    "selector_value": true,
+    "concavity_positive": true,
+    "decision_status": "descriptive_candidate_incremental_value"
+  },
+  "full_allocations": [
+    {
+      "evaluation": "full",
+      "strategy": "baseline",
+      "platform": "Google",
+      "share": 0.5536646181613323,
+      "budget": 525618.5966666668
+    },
+    {
+      "evaluation": "full",
+      "strategy": "baseline",
+      "platform": "Meta",
+      "share": 0.18264454573411312,
+      "budget": 173392.64000000004
+    },
+    {
+      "evaluation": "full",
+      "strategy": "baseline",
+      "platform": "TikTok",
+      "share": 0.26369083610455474,
+      "budget": 250333.51000000004
+    },
+    {
+      "evaluation": "full",
+      "strategy": "selected",
+      "platform": "Google",
+      "share": 0.49,
+      "budget": 465178.92586666666
+    },
+    {
+      "evaluation": "full",
+      "strategy": "selected",
+      "platform": "Meta",
+      "share": 0.21,
+      "budget": 199362.3968
+    },
+    {
+      "evaluation": "full",
+      "strategy": "selected",
+      "platform": "TikTok",
+      "share": 0.3,
+      "budget": 284803.424
+    }
+  ],
+  "output_counts": {
+    "runs": 1,
+    "allocations": 96,
+    "scenarios": 54,
+    "validation": 24,
+    "sensitivity": 4,
+    "history": 36,
+    "executions": 2
+  },
+  "duplicate_groups": {
+    "allocations": 0,
+    "scenarios": 0,
+    "validation": 0,
+    "sensitivity": 0,
+    "history": 0
+  },
+  "warehouse_full_snapshot_unchanged": true,
+  "python_tests": "18 PASS including POC parity and PostgreSQL integration",
+  "dev_verified": false,
+  "dev_preflight": "Connection PASS; mart.DssMonthly missing; no dev writes"
+}

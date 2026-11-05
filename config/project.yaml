@@ -22,3 +22,10 @@ database:
 
   tables:
     raw_ads: global_ads_performance
+
+# Verified against dbt models/marts/dss/dss_monthly.sql and dbt_project.yml.
+dss:
+  input_table: DssMonthly
+  output_schemas:
+    local: dss
+    dev: dss

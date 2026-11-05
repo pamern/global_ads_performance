@@ -23,6 +23,7 @@ Local không sử dụng `DATABASE_URL`. Không đổi cấu hình Supabase ho�
 | `dim_campaign_type` → `DimCampaignType` | Mart / table | Loại chiến dịch |
 | `dim_industry` → `DimIndustry` | Mart / table | Ngành |
 | `dim_country` → `DimCountry` | Mart / table | Quốc gia |
+| `dss_monthly` → `DssMonthly` | Mart / table | Input DSS năm 2024, grain Platform × Month |
 
 ## Data Quality Tests
 
@@ -96,3 +97,26 @@ erDiagram
 ### Tên Mart
 
 Bảng và cột Mart dùng PascalCase: `DimDate`, `DimPlatform`, `DimCampaignType`, `DimIndustry`, `DimCountry`, `FctAdPerformance`; ví dụ `FactId`, `DateKey`, `AdSpend`. Schema vẫn là `mart`. Tên file/model và `ref()` giữ snake_case để bảo toàn tích hợp dbt. PostgreSQL cần dấu ngoặc kép khi truy vấn: `select "AdSpend" from mart."FctAdPerformance"`.
+
+## DSS Input Mart
+
+`mart."DssMonthly"` tổng hợp từ `ref('int_ads_performance')`, không thay đổi BI Mart. Grain **Platform × Month**: `Platform` là Google/Meta/TikTok theo POC, `Month` là DATE ngày đầu tháng, chỉ lấy năm 2024; kỳ vọng đủ 36 trạng thái. Không tự sinh dòng thiếu.
+
+Các measures: `AdSpend`, `Revenue`, `Impressions`, `Conversions`. Các rates `RevenuePerDollar`, `ImpressionsPerDollar`, `ConversionsPerDollar` = SUM(measure) / NULLIF(SUM(AdSpend), 0), dùng NUMERIC, không AVG tỷ lệ hoặc làm tròn sớm. Spend bằng 0 cho rates NULL và tests báo ERROR vì chưa đủ điều kiện mô phỏng. Không lọc bỏ hay thay thế measures lỗi; test kiểm tra cả dòng nguồn để tổng hợp không che NULL/giá trị âm/tiền không hữu hạn.
+
+Tests kiểm tra NOT NULL, platform hợp lệ, uniqueness và đủ 36 trạng thái, phạm vi giá trị, công thức rates và đối soát bốn measures từng Platform × Month với BI Fact/Dimensions. Unit fixture kiểm tra ratio-of-sums, chia 0, biên năm/tháng và lọc platform. Xem [testing.md](docs/testing.md).
+
+Khi các model upstream và BI Mart đã tồn tại, chạy từ repository root:
+
+```bash
+uv run python scripts/dbt_warehouse.py build --target local --select dss_monthly
+uv run python scripts/dbt_warehouse.py test --target local --select dss_monthly
+```
+
+Nếu cần dựng upstream, thêm dấu `+` phía trước selector (`+dss_monthly`); reconciliation cần BI Fact/Dimensions hiện có. Dev tuân thủ quy trình xác minh ở trên. Các lệnh build/test được hướng dẫn để chạy sau; lần triển khai bước 3 này chưa chạy model hoặc tests trên database.
+
+Mart chỉ cung cấp hiệu suất lịch sử. Baseline, monthly shares, Convex Hull, Candidate selection và các bảng kết quả thuộc bước DSS tiếp theo, chưa triển khai ở bước 3.
+
+## Chạy Python DSS
+
+DSS Engine đọc `mart."DssMonthly"`, ghi các bảng kết quả riêng trong schema `dss`; không gọi dbt hoặc sửa warehouse. Chạy `uv run python scripts/run_dss.py --target local` (hoặc `--target dev`). Cấu hình, grain output và kiểm thử: [dss/README.md](../dss/README.md).
