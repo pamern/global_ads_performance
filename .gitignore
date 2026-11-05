@@ -50,3 +50,7 @@ htmlcov/
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Power BI local settings and data cache
+**/.pbi/localSettings.json
+**/.pbi/cache.abf

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Global_Ads_Dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "d82b23e8-9f4d-43ea-b1a4-9098f65b86dc"
+  }
+}

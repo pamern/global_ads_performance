@@ -1,0 +1,418 @@
+table 'Growth Pocket'
+	lineageTag: 9eed91c9-d585-460b-8d02-ed7700dd0eea
+
+	measure 'Pocket Revenue' =
+			
+			VAR _Platform =
+			    SELECTEDVALUE('Growth Pocket'[Platform])
+			VAR _Country =
+			    SELECTEDVALUE('Growth Pocket'[Country])
+			VAR _CampaignType =
+			    SELECTEDVALUE('Growth Pocket'[CampaignType])
+			RETURN
+			    CALCULATE(
+			        [Total Revenue],
+			        TREATAS(
+			            {_Platform},
+			            'mart DimPlatform'[Platform]
+			        ),
+			        TREATAS(
+			            {_Country},
+			            'mart DimCountry'[Country]
+			        ),
+			        TREATAS(
+			            {_CampaignType},
+			            'mart DimCampaignType'[CampaignType]
+			        )
+			    )
+		lineageTag: 474c7b55-ae89-4a33-bb16-1206d0aaa0dd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Pocket Ad Spend' =
+			
+			VAR _Platform =
+			    SELECTEDVALUE('Growth Pocket'[Platform])
+			VAR _Country =
+			    SELECTEDVALUE('Growth Pocket'[Country])
+			VAR _CampaignType =
+			    SELECTEDVALUE('Growth Pocket'[CampaignType])
+			RETURN
+			    CALCULATE(
+			        [Total Ad Spend],
+			        TREATAS(
+			            {_Platform},
+			            'mart DimPlatform'[Platform]
+			        ),
+			        TREATAS(
+			            {_Country},
+			            'mart DimCountry'[Country]
+			        ),
+			        TREATAS(
+			            {_CampaignType},
+			            'mart DimCampaignType'[CampaignType]
+			        )
+			    )
+		lineageTag: af0ae716-b10a-42f7-b51a-42e456de3fa9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Pocket ROAS' =
+			
+			DIVIDE(
+			    [Pocket Revenue],
+			    [Pocket Ad Spend]
+			)
+		lineageTag: 28149eae-0bd2-4a0c-a8a6-1b748cc987be
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Pocket Revenue Contribution' =
+			
+			DIVIDE(
+			    [Pocket Revenue],
+			    CALCULATE(
+			        [Total Revenue],
+			        REMOVEFILTERS('mart DimPlatform'),
+			        REMOVEFILTERS('mart DimCountry'),
+			        REMOVEFILTERS('mart DimCampaignType')
+			    )
+			)
+		formatString: 0.00%
+		lineageTag: 421108f1-c668-4fe1-bd75-a551e7744935
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Pocket Spend Concentration' =
+			
+			DIVIDE(
+			    [Pocket Ad Spend],
+			    CALCULATE(
+			        [Total Ad Spend],
+			        REMOVEFILTERS('mart DimPlatform'),
+			        REMOVEFILTERS('mart DimCountry'),
+			        REMOVEFILTERS('mart DimCampaignType')
+			    )
+			)
+		formatString: 0.00%
+		lineageTag: fa2c3851-75cc-40ae-a9ee-92f885ddf221
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Median Pocket ROAS' =
+			
+			MEDIANX(
+			    FILTER(
+			        ALLSELECTED('Growth Pocket'),
+			        NOT ISBLANK(
+			            CALCULATE([Pocket ROAS])
+			        )
+			    ),
+			    CALCULATE([Pocket ROAS])
+			)
+		lineageTag: 36d847b0-e71a-4adc-9828-69b3b8eaa413
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Median Spend Concentration' =
+			
+			MEDIANX(
+			    FILTER(
+			        ALLSELECTED('Growth Pocket'),
+			        NOT ISBLANK(
+			            CALCULATE([Pocket Spend Concentration])
+			        )
+			    ),
+			    CALCULATE([Pocket Spend Concentration])
+			)
+		lineageTag: fa408bd8-0322-416a-9e4f-6a7193540dfa
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Pocket Campaign Count' =
+			
+			VAR _Platform =
+			    SELECTEDVALUE('Growth Pocket'[Platform])
+			VAR _Country =
+			    SELECTEDVALUE('Growth Pocket'[Country])
+			VAR _CampaignType =
+			    SELECTEDVALUE('Growth Pocket'[CampaignType])
+			RETURN
+			    CALCULATE(
+			        DISTINCTCOUNT(
+			            'mart FctAdPerformance'[FactId]
+			        ),
+			        TREATAS(
+			            {_Platform},
+			            'mart DimPlatform'[Platform]
+			        ),
+			        TREATAS(
+			            {_Country},
+			            'mart DimCountry'[Country]
+			        ),
+			        TREATAS(
+			            {_CampaignType},
+			            'mart DimCampaignType'[CampaignType]
+			        )
+			    )
+		formatString: 0
+		lineageTag: db5d02d6-829b-409f-8485-e9df551225dc
+
+	measure 'Pocket Revenue Response' =
+			
+			VAR _Platform =
+			    SELECTEDVALUE('Growth Pocket'[Platform])
+			VAR _Country =
+			    SELECTEDVALUE('Growth Pocket'[Country])
+			VAR _CampaignType =
+			    SELECTEDVALUE('Growth Pocket'[CampaignType])
+			
+			VAR _CampaignData =
+			    CALCULATETABLE(
+			        SUMMARIZE(
+			            'mart FctAdPerformance',
+			            'mart FctAdPerformance'[FactId],
+			            "X", SUM('mart FctAdPerformance'[AdSpend]),
+			            "Y", SUM('mart FctAdPerformance'[Revenue])
+			        ),
+			        TREATAS(
+			            {_Platform},
+			            'mart DimPlatform'[Platform]
+			        ),
+			        TREATAS(
+			            {_Country},
+			            'mart DimCountry'[Country]
+			        ),
+			        TREATAS(
+			            {_CampaignType},
+			            'mart DimCampaignType'[CampaignType]
+			        )
+			    )
+			
+			VAR _ValidCampaigns =
+			    FILTER(
+			        _CampaignData,
+			        NOT ISBLANK([X])
+			            && NOT ISBLANK([Y])
+			    )
+			
+			VAR _MeanX =
+			    AVERAGEX(_ValidCampaigns, [X])
+			VAR _MeanY =
+			    AVERAGEX(_ValidCampaigns, [Y])
+			
+			VAR _Numerator =
+			    SUMX(
+			        _ValidCampaigns,
+			        ([X] - _MeanX) * ([Y] - _MeanY)
+			    )
+			
+			VAR _Denominator =
+			    SUMX(
+			        _ValidCampaigns,
+			        POWER([X] - _MeanX, 2)
+			    )
+			
+			RETURN
+			    IF(
+			        COUNTROWS(_ValidCampaigns) >= 2,
+			        DIVIDE(_Numerator, _Denominator),
+			        BLANK()
+			    )
+		formatString: \$#,0.00
+		lineageTag: 018d61c1-8112-4633-a41b-66256fbe120b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Median Pocket Revenue Response' =
+			
+			MEDIANX(
+			    FILTER(
+			        ALLSELECTED('Growth Pocket'),
+			        NOT ISBLANK(
+			            CALCULATE([Pocket Revenue Response])
+			        )
+			    ),
+			    CALCULATE([Pocket Revenue Response])
+			)
+		lineageTag: 69dc8e62-e694-4c93-9951-0e6eeaa589c6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Growth Opportunity Count' =
+			
+			SUMX(
+			    'Growth Pocket',
+			    IF(
+			        [Is Growth Opportunity] = 1,
+			        1,
+			        0
+			    )
+			)
+		formatString: 0
+		lineageTag: 35f7163f-e72a-4b8e-8d48-2c6279c3f348
+
+	measure 'Total Growth Pocket Count' =
+			
+			COUNTROWS(
+			    ALLSELECTED('Growth Pocket')
+			)
+		formatString: 0
+		lineageTag: 9ca0ea54-9e74-4c50-b846-3cae902c7505
+
+	measure 'Growth Opportunity Revenue' =
+			
+			SUMX(
+			    FILTER(
+			        'Growth Pocket',
+			        CALCULATE([Is Growth Opportunity]) = 1
+			    ),
+			    CALCULATE([Pocket Revenue])
+			)
+		lineageTag: c0168533-f64b-4656-b7df-b2bff9bd866d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Growth Opportunity Ad Spend' =
+			
+			SUMX(
+			    FILTER(
+			        'Growth Pocket',
+			        CALCULATE([Is Growth Opportunity]) = 1
+			    ),
+			    CALCULATE([Pocket Ad Spend])
+			)
+		lineageTag: 97a6efc8-eb3f-4e6b-b97a-204b78692b44
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Growth Opportunity Revenue Contribution' =
+			
+			DIVIDE(
+			    [Growth Opportunity Revenue],
+			    CALCULATE(
+			        [Total Revenue],
+			        REMOVEFILTERS('mart DimPlatform'),
+			        REMOVEFILTERS('mart DimCountry'),
+			        REMOVEFILTERS('mart DimCampaignType')
+			    )
+			)
+		formatString: 0.00%
+		lineageTag: 3b74cadd-a7ba-4ea2-80c8-49b98369fc1c
+
+	measure 'Growth Opportunity Spend Concentration' =
+			
+			DIVIDE(
+			    [Growth Opportunity Ad Spend],
+			    CALCULATE(
+			        [Total Ad Spend],
+			        REMOVEFILTERS('mart DimPlatform'),
+			        REMOVEFILTERS('mart DimCountry'),
+			        REMOVEFILTERS('mart DimCampaignType')
+			    )
+			)
+		formatString: 0.00%
+		lineageTag: 34952a64-a826-46cc-bff4-2f099c57e5d9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Growth Opportunity ROAS' =
+			
+			DIVIDE(
+			    [Growth Opportunity Revenue],
+			    [Growth Opportunity Ad Spend]
+			)
+		lineageTag: 3faf0169-1301-4313-a9c7-8aa783eab2a3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Growth Opportunity Count by Country' =
+			
+			SUMX(
+			    VALUES('Growth Pocket'[Growth Pocket Name]),
+			    IF(
+			        CALCULATE([Is Growth Opportunity]) = 1,
+			        1,
+			        0
+			    )
+			)
+		formatString: 0
+		lineageTag: 8f6a7d6a-977e-44bf-ba75-a7ce7ad59e3d
+
+	measure 'Is Growth Opportunity' =
+			
+			IF(
+			    [Pocket ROAS] > [Median Pocket ROAS] &&
+			    [Pocket Spend Concentration] < [Median Spend Concentration] &&
+			    [Pocket Revenue Response] >= [Median Pocket Revenue Response] &&
+			    [Pocket Campaign Count] >= 10,
+			    1,
+			    0
+			)
+		formatString: 0
+		lineageTag: 1be80d48-097f-4148-8bdc-cb8157c85d9a
+
+	measure 'Revenue Response Color' =
+			
+			IF(
+			    ISBLANK([Pocket Revenue Response]), BLANK(),
+			    IF(
+			        [Pocket Revenue Response] >= [Median Pocket Revenue Response],
+			        "#12239E", -- Revenue Response >= median
+			        "#A9C1E8"  -- Revenue Response < median
+			    )
+			)
+		lineageTag: 5f913677-108f-43d2-b63a-e305212c1493
+
+	measure 'Opportunity Card Subtitle' = "of " & [Total Growth Pocket Count] & " Growth Pockets meeting all 4 conditions"
+		lineageTag: 8e30a6f3-6ba5-4ee0-a326-07c859ddf3a1
+
+	column 'Growth Pocket Name' =
+			
+			'Growth Pocket'[Platform]
+			    & " × "
+			    & 'Growth Pocket'[Country]
+			    & " × "
+			    & 'Growth Pocket'[CampaignType]
+		lineageTag: 2d19a1ed-77d4-4eed-a9a0-cb2e2fdfb249
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Platform
+		lineageTag: 1ebb0438-cb55-4d23-9715-202a157b4061
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: mart DimPlatform[Platform]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		lineageTag: 36785773-f74f-4e70-9161-fbbea19a84c2
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: mart DimCountry[Country]
+
+		annotation SummarizationSetBy = Automatic
+
+	column CampaignType
+		lineageTag: 355b6113-9f4b-4832-b68f-60819c1c8a5a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: mart DimCampaignType[CampaignType]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Growth Pocket' = calculated
+		mode: import
+		source =
+				
+				SUMMARIZE(
+				    'mart FctAdPerformance',
+				    'mart DimPlatform'[Platform],
+				    'mart DimCountry'[Country],
+				    'mart DimCampaignType'[CampaignType]
+				)
+
+	annotation PBI_Id = 143ceb6f365c4336b992093bd2c6fd2b
+
