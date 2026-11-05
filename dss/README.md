@@ -37,7 +37,9 @@ uv sync
 # Chỉ khi upstream và BI Mart đã có; database mới xem dbt-modeling/README.md.
 uv run python scripts/dbt_warehouse.py build --target local --select dss_monthly
 uv run python scripts/run_dss.py --target local
-# Dev: kiểm tra đúng endpoint/database và quyền CREATE trước khi ghi.
+# Dev: kiểm tra đúng host/project, database, Raw, quyền CREATE và schema đích trước khi ghi.
+# Thay HOST/DATABASE bằng host và tên database thực tế trong DATABASE_URL.
+export NEXORA_DEV_VERIFIED='HOST/DATABASE'
 uv run python scripts/dbt_warehouse.py build --target dev --select dss_monthly
 uv run python scripts/run_dss.py --target dev
 
