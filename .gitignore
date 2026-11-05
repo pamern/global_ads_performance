@@ -18,3 +18,35 @@ dbt-modeling/.user.yml
 
 # Local task prompts
 /prompts/
+
+# Python and notebook caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Generated datasets and local command notes
+/data/processed/
+/command.txt
+
+# Private credentials and local tooling state
+*.key
+*.pem
+*.p12
+*.pfx
+/.aws/
+/.codex/
+/.agents/
+
+# Local database files and backups
+*.duckdb
+*.duckdb.wal
+*.sqlite
+*.sqlite3
+*.sql.dump
+*.pgdump
+
+# OS metadata
+.DS_Store
+Thumbs.db
