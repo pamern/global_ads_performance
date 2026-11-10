@@ -1,0 +1,64 @@
+table 'dss allocations'
+	lineageTag: 237c3539-8f63-4a0e-b38d-24b1375677cd
+
+	column run_id
+		dataType: string
+		lineageTag: 97408cdc-29e0-4b02-9984-436c6fb805d4
+		summarizeBy: none
+		sourceColumn: run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column evaluation
+		dataType: string
+		lineageTag: dbe032d4-b4ce-4cc5-99fe-0542a824e723
+		summarizeBy: none
+		sourceColumn: evaluation
+
+		annotation SummarizationSetBy = Automatic
+
+	column strategy
+		dataType: string
+		lineageTag: 85b41714-37c9-4879-b0af-c5112bbcda4a
+		summarizeBy: none
+		sourceColumn: strategy
+
+		annotation SummarizationSetBy = Automatic
+
+	column platform
+		dataType: string
+		lineageTag: 7b9666c8-b6b4-4a46-b2d6-5331f94bd0b5
+		summarizeBy: none
+		sourceColumn: platform
+
+		annotation SummarizationSetBy = Automatic
+
+	column share
+		dataType: double
+		lineageTag: 20143ec5-87f9-4ae3-a655-c0eef471767e
+		summarizeBy: sum
+		sourceColumn: share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column budget
+		dataType: double
+		lineageTag: 75f6f671-90ff-47dd-83e6-243d8e10a370
+		summarizeBy: sum
+		sourceColumn: budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'dss allocations' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    dss_allocations = Source{[Schema="dss",Item="allocations"]}[Data]
+				in
+				    dss_allocations
+

@@ -1,0 +1,4258 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "dssBudgetDecision004",
+  "displayName": "Budget Allocation Decision",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "visualInteractions": [
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssAllocationPlan",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssBudget",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEligibleSupport",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssEvidencePanel",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeader",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHeaderAccent",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssHistoricalSupport",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactConversions",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactFootnote",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactImpressions",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactPanel",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssImpactRevenue",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssLimitation",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMove",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendation",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustBest",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustMedian",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustPanel",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRobustWorst",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebar",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSidebarNotes",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssValidationChart",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWinRate",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssWorstRevenue",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendationPanel",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssRecommendedAction",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssSupportingEvidence",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedEvidenceLabel",
+      "target": "dssMatchedSlash",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssAllocationPlan",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssBudget",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssEligibleSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssEvidencePanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssHistoricalSupport",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssImpactConversions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssImpactFootnote",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssImpactImpressions",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssImpactPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssImpactRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssLimitation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssMove",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssRecommendation",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssRobustBest",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssRobustMedian",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssRobustPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssRobustWorst",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssSidebarNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssValidationChart",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssWinRate",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssWorstRevenue",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssRecommendationPanel",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssRecommendedAction",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssSupportingEvidence",
+      "type": "NoFilter"
+    },
+    {
+      "source": "dssMatchedSlash",
+      "target": "dssMatchedEvidenceLabel",
+      "type": "NoFilter"
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F5F7FB'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F5F7FB'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

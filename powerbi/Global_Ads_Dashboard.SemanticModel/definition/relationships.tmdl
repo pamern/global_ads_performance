@@ -23,3 +23,41 @@ relationship AutoDetected_3fc3ae22-69f0-48c6-8d71-573ff0d51922
 	fromColumn: 'mart FctAdPerformance'.PlatformKey
 	toColumn: 'mart DimPlatform'.PlatformKey
 
+relationship 9acdd947-73d0-4719-953d-61453f65b7bb
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'dss runs'.created_at
+	toColumn: LocalDateTable_c2f98097-99d0-4716-b7ae-430b7a48b332.Date
+
+relationship 25973da7-5fa0-4993-9c61-201d7e932f08
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'dss validation'.test_month
+	toColumn: LocalDateTable_baa49f20-dc25-4235-ad0b-e38205972500.Date
+
+relationship 19ea0edf-f369-4bae-8a4b-dacbd93c3907
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'dss validation'.train_end
+	toColumn: LocalDateTable_e48139f5-f478-4640-a725-1341070f5f0c.Date
+
+relationship 7f5b6ae7-f1a4-4f10-9ae6-7ba4dd9ef462
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'dss scenarios'.state_month
+	toColumn: LocalDateTable_f8e8c06e-1416-4da4-bb45-4f5fd78902cf.Date
+
+relationship ec0fc97a-b53b-493a-9154-6e16e27baf5f
+	fromColumn: 'dss allocations'.run_id
+	toColumn: 'dss runs'.run_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4c902731-cf77-4d2b-8708-4297ff42ad61
+	fromColumn: 'dss validation'.run_id
+	toColumn: 'dss runs'.run_id
+
+	annotation PBI_IsFromSource = FS
+
+relationship 5a3e423c-0e6a-4c4c-9da5-ee682ec112c7
+	fromColumn: 'dss scenarios'.run_id
+	toColumn: 'dss runs'.run_id
+
+	annotation PBI_IsFromSource = FS
+
