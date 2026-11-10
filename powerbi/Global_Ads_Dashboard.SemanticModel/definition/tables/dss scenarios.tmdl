@@ -1,0 +1,112 @@
+table 'dss scenarios'
+	lineageTag: 7b986d92-ea7d-4db9-84f1-be213657d111
+
+	column run_id
+		dataType: string
+		lineageTag: b4f4f57e-cdf8-4731-80c6-d0d1245fdfb4
+		summarizeBy: none
+		sourceColumn: run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column evaluation
+		dataType: string
+		lineageTag: bfdc6faf-be5e-4b89-8b3e-9c4d0514d8b7
+		summarizeBy: none
+		sourceColumn: evaluation
+
+		annotation SummarizationSetBy = Automatic
+
+	column strategy
+		dataType: string
+		lineageTag: 4e340653-5e45-45ef-86ab-168543076c8c
+		summarizeBy: none
+		sourceColumn: strategy
+
+		annotation SummarizationSetBy = Automatic
+
+	column state_month
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 3d7a357b-9901-4daa-a97e-0c0d6b0204c0
+		summarizeBy: none
+		sourceColumn: state_month
+
+		variation Variation
+			isDefault
+			relationship: 7f5b6ae7-f1a4-4f10-9ae6-7ba4dd9ef462
+			defaultHierarchy: LocalDateTable_f8e8c06e-1416-4da4-bb45-4f5fd78902cf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column revenue
+		dataType: double
+		lineageTag: b09454c8-0ddf-47e7-b5c7-e2411c1b482e
+		summarizeBy: sum
+		sourceColumn: revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column impression
+		dataType: double
+		lineageTag: 9aa1b396-2761-43d1-b951-ee03a5ad65dc
+		summarizeBy: sum
+		sourceColumn: impression
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column conversion
+		dataType: double
+		lineageTag: 38542e90-99c4-4b8d-b6fb-975122b2fff1
+		summarizeBy: sum
+		sourceColumn: conversion
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column revenue_uplift
+		dataType: double
+		lineageTag: 48af2a6f-3bfa-4ed5-a550-b84fa5c5295c
+		summarizeBy: sum
+		sourceColumn: revenue_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column impression_uplift
+		dataType: double
+		lineageTag: 6d01d987-6dbc-4513-a299-1ef0edf33f97
+		summarizeBy: sum
+		sourceColumn: impression_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column conversion_uplift
+		dataType: double
+		lineageTag: d60ba600-6a8c-488c-bd5e-ca1f835deddf
+		summarizeBy: sum
+		sourceColumn: conversion_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'dss scenarios' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    dss_scenarios = Source{[Schema="dss",Item="scenarios"]}[Data]
+				in
+				    dss_scenarios
+

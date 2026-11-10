@@ -398,6 +398,175 @@ table _Measures
 		displayFolder: Growth
 		lineageTag: c4fb039b-f322-411f-828f-43f24807422d
 
+	measure 'DSS Simulation Budget' = SELECTEDVALUE('dss runs'[simulation_budget])
+		formatString: $#,0
+		displayFolder: DSS
+		lineageTag: b7866019-836f-4b54-a7a9-f9f900a9d248
+
+	measure 'DSS Budget to Move' = IF(HASONEVALUE('dss runs'[run_id]), SELECTEDVALUE('dss runs'[moved_budget]))
+		formatString: $#,0
+		displayFolder: DSS
+		lineageTag: b77046ca-abb9-4fcf-a6ee-8022ea6a288a
+
+	measure 'DSS Revenue Worst' = IF(HASONEVALUE('dss runs'[run_id]), SELECTEDVALUE('dss runs'[worst_revenue_uplift]))
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: DSS
+		lineageTag: dc2109ca-9c2c-434d-8311-3bb5dfe72a52
+
+	measure 'DSS Revenue Median' = IF(HASONEVALUE('dss runs'[run_id]), SELECTEDVALUE('dss runs'[median_revenue_uplift]))
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: DSS
+		lineageTag: 8e417470-5eb5-4750-8287-515cc5e443ca
+
+	measure 'DSS Revenue Best' = IF(HASONEVALUE('dss runs'[run_id]), SELECTEDVALUE('dss runs'[best_revenue_uplift]))
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: DSS
+		lineageTag: 93aa3085-1805-43f4-8a3e-05f4d82716e8
+
+	measure 'DSS Impressions Worst' = IF(HASONEVALUE('dss runs'[run_id]), SELECTEDVALUE('dss runs'[worst_impression_uplift]))
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: DSS
+		lineageTag: 6dcafaa0-2a3a-400f-9cbf-d258b676ba49
+
+	measure 'DSS Conversions Worst' = IF(HASONEVALUE('dss runs'[run_id]), SELECTEDVALUE('dss runs'[worst_conversion_uplift]))
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: DSS
+		lineageTag: 338abb20-3504-46c0-8629-2120884c7fab
+
+	measure 'DSS OOT Win Rate' = IF(HASONEVALUE('dss runs'[run_id]), SELECTEDVALUE('dss runs'[oot_win_rate]))
+		formatString: 0.0%
+		displayFolder: DSS
+		lineageTag: f69b721b-5ec4-4fc5-bea7-0b9e683408dc
+
+	measure 'DSS Current Share' = IF(HASONEVALUE('dss runs'[run_id]), CALCULATE(SELECTEDVALUE('dss allocations'[share]), 'dss allocations'[evaluation] = "full", 'dss allocations'[strategy] = "baseline"))
+		formatString: 0.0%
+		displayFolder: DSS
+		lineageTag: 4f0ca312-c113-4f6e-85b6-5f3ef350d76a
+
+	measure 'DSS Proposed Share' = IF(HASONEVALUE('dss runs'[run_id]), CALCULATE(SELECTEDVALUE('dss allocations'[share]), 'dss allocations'[evaluation] = "full", 'dss allocations'[strategy] = "selected"))
+		formatString: 0.0%
+		displayFolder: DSS
+		lineageTag: 590b4e96-4e9c-481b-829f-b754e48bf30b
+
+	measure 'DSS Budget Change' = ([DSS Proposed Share] - [DSS Current Share]) * [DSS Simulation Budget]
+		formatString: +$#,0;-$#,0;$0
+		displayFolder: DSS
+		lineageTag: fb496f2d-0bbf-4ae0-a42a-68af59bc0cfa
+
+	measure 'DSS OOT Monthly Uplift' = IF(HASONEVALUE('dss runs'[run_id]), CALCULATE(SELECTEDVALUE('dss validation'[revenue_uplift]), 'dss validation'[strategy] = "dss"))
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: DSS
+		lineageTag: 5fec7e83-4cda-4c56-814b-4cadd12db8c5
+
+	measure 'DSS Decision Label' = IF(HASONEVALUE('dss runs'[run_id]), SWITCH(SELECTEDVALUE('dss runs'[decision_status]), "baseline_fallback", "Maintain Current Allocation", "descriptive_candidate_incremental_value", "Consider Reallocation", "descriptive_candidate_limited_selector_value", "Reallocation – Limited Evidence", BLANK()))
+		displayFolder: DSS
+		lineageTag: 49a90315-cee8-4a31-8ace-50ce9a977553
+
+	measure 'DSS Decision Reason' = IF(HASONEVALUE('dss runs'[run_id]), SWITCH(SELECTEDVALUE('dss runs'[decision_status]), "baseline_fallback", "No reallocation met the selection requirements.", "descriptive_candidate_incremental_value", "Outperformed matched-simple in all six validation periods and met DSS improvement criteria.", "descriptive_candidate_limited_selector_value", "A suitable allocation exists; benchmark evidence does not meet all selection criteria.", BLANK()))
+		displayFolder: DSS
+		lineageTag: c02e6496-c6ac-4507-b314-8467c3825010
+
+	measure 'DSS Recommended Action' =
+			VAR Changes =
+			    ADDCOLUMNS(VALUES('dss allocations'[platform]), "@Change", [DSS Budget Change])
+			VAR Sources =
+			    CONCATENATEX(FILTER(Changes, [@Change] < -0.005), 'dss allocations'[platform], ", ", 'dss allocations'[platform], ASC)
+			VAR Targets =
+			    CONCATENATEX(FILTER(Changes, [@Change] > 0.005), 'dss allocations'[platform] & " (+" & FORMAT([@Change] / 1000, "$0.0") & "K)", " and ", 'dss allocations'[platform], ASC)
+			RETURN
+			IF(
+			    HASONEVALUE('dss runs'[run_id]),
+			    IF(
+			        SELECTEDVALUE('dss runs'[decision_status]) = "baseline_fallback",
+			        "Maintain current allocation; no budget redistribution.",
+			        IF(
+			            Sources <> "" && Targets <> "",
+			            "Shift " & FORMAT([DSS Budget to Move] / 1000, "$0.0") & "K from " & Sources & " to " & Targets & ".",
+			            "No budget redistribution indicated."
+			        )
+			    )
+			)
+		displayFolder: DSS
+		lineageTag: 7daad213-493d-4bb1-be45-e4d038f7b531
+
+	measure 'DSS OOT Mean Uplift' = IF(HASONEVALUE('dss runs'[run_id]), SELECTEDVALUE('dss runs'[oot_mean_uplift]))
+		formatString: +0.00%;-0.00%;0.00%
+		displayFolder: DSS
+		lineageTag: af162cfb-3877-47c9-bead-feb8932abc37
+
+	measure 'DSS Strategy Mean Uplift' =
+			VAR Code = SELECTEDVALUE('DSS Strategy'[Code])
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), CALCULATE(AVERAGE('dss validation'[revenue_uplift]), TREATAS({Code}, 'dss validation'[strategy]), 'dss validation'[found] = TRUE(), NOT ISBLANK('dss validation'[revenue_uplift])))
+		formatString: +0.00%;-0.00%;0.00%
+		displayFolder: DSS
+		lineageTag: 964428aa-27de-46bf-9eb8-997804642c0e
+
+	measure 'DSS Strategy Worst Uplift' =
+			VAR Code = SELECTEDVALUE('DSS Strategy'[Code])
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), CALCULATE(MIN('dss validation'[revenue_uplift]), TREATAS({Code}, 'dss validation'[strategy]), 'dss validation'[found] = TRUE(), NOT ISBLANK('dss validation'[revenue_uplift])))
+		formatString: +0.00%;-0.00%;0.00%
+		displayFolder: DSS
+		lineageTag: 334aeac1-5802-4181-985a-5670e9aed13a
+
+	measure 'DSS Strategy Average Movement' =
+			VAR Code = SELECTEDVALUE('DSS Strategy'[Code])
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), CALCULATE(AVERAGE('dss validation'[moved_share]), TREATAS({Code}, 'dss validation'[strategy]), 'dss validation'[found] = TRUE(), NOT ISBLANK('dss validation'[revenue_uplift])))
+		formatString: 0.0%
+		displayFolder: DSS
+		lineageTag: 9b25531b-0ded-4182-81a8-53726921c786
+
+	measure 'DSS Strategy Valid Periods' =
+			VAR Code = SELECTEDVALUE('DSS Strategy'[Code])
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), CALCULATE(COUNTROWS('dss validation'), TREATAS({Code}, 'dss validation'[strategy]), 'dss validation'[found] = TRUE(), NOT ISBLANK('dss validation'[revenue_uplift])))
+		formatString: 0
+		displayFolder: DSS
+		lineageTag: 4a3378d6-5d0d-4ac5-aa6c-b7432137d7a3
+
+	measure 'DSS Strategy Positive Months' =
+			VAR Code = SELECTEDVALUE('DSS Strategy'[Code])
+			VAR N = [DSS Strategy Valid Periods]
+			VAR Positive = CALCULATE(COUNTROWS('dss validation'), TREATAS({Code}, 'dss validation'[strategy]), 'dss validation'[found] = TRUE(), NOT ISBLANK('dss validation'[revenue_uplift]), 'dss validation'[revenue_uplift] > 0)
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), IF(N > 0, COALESCE(Positive, 0) & " / " & N, "N/A"))
+		displayFolder: DSS
+		lineageTag: 3c9e0596-72e1-4592-b5fb-1fc14f145838
+
+	measure 'DSS Strategy Feasibility' =
+			VAR Code = SELECTEDVALUE('DSS Strategy'[Code])
+			VAR Results = CALCULATETABLE('dss validation', TREATAS({Code}, 'dss validation'[strategy]), 'dss validation'[found] = TRUE(), NOT ISBLANK('dss validation'[revenue_uplift]))
+			VAR SupportKnown = COUNTROWS(FILTER(Results, NOT ISBLANK('dss validation'[inside_support])))
+			VAR FunnelKnown = COUNTROWS(FILTER(Results, NOT ISBLANK('dss validation'[pass_funnel])))
+			VAR SupportPass = COUNTROWS(FILTER(Results, 'dss validation'[inside_support] == TRUE()))
+			VAR FunnelPass = COUNTROWS(FILTER(Results, 'dss validation'[pass_funnel] == TRUE()))
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), IF(COUNTROWS(Results) > 0, "Support " & IF(SupportKnown > 0, COALESCE(SupportPass, 0) & "/" & SupportKnown, "N/A") & " · Funnel " & IF(FunnelKnown > 0, COALESCE(FunnelPass, 0) & "/" & FunnelKnown, "N/A"), "N/A"))
+		displayFolder: DSS
+		lineageTag: a8d88987-5626-46b0-8d72-1bbdad7d452e
+
+	measure 'DSS Paired Advantage pp' =
+			VAR Pairs = FILTER(ADDCOLUMNS(VALUES('dss validation'[test_month]), "@DSS", CALCULATE([DSS OOT Monthly Uplift], 'dss validation'[found] = TRUE()), "@Benchmark", [DSS Strategy Mean Uplift]), NOT ISBLANK([@DSS]) && NOT ISBLANK([@Benchmark]))
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), AVERAGEX(Pairs, [@DSS] - [@Benchmark]) * 100)
+		formatString: +0.00" pp";-0.00" pp";0.00" pp"
+		displayFolder: DSS
+		lineageTag: 20532bca-84f0-45a5-98e1-9a09b5c189d9
+
+	measure 'DSS Paired Periods' =
+			VAR Pairs = FILTER(ADDCOLUMNS(VALUES('dss validation'[test_month]), "@DSS", CALCULATE([DSS OOT Monthly Uplift], 'dss validation'[found] = TRUE()), "@Benchmark", [DSS Strategy Mean Uplift]), NOT ISBLANK([@DSS]) && NOT ISBLANK([@Benchmark]))
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), COUNTROWS(Pairs))
+		formatString: 0
+		displayFolder: DSS
+		lineageTag: 6f8b49d6-5dbb-4fe2-905e-4f2a47c5e314
+
+	measure 'DSS OOT Budget Movement' = IF(HASONEVALUE('dss runs'[run_id]), CALCULATE(AVERAGE('dss validation'[moved_share]), 'dss validation'[strategy] = "dss", 'dss validation'[found] = TRUE(), NOT ISBLANK('dss validation'[revenue_uplift])))
+		formatString: 0.0%
+		displayFolder: DSS
+		lineageTag: 680418c7-df4e-4f12-b8d7-69d57629d594
+
+	measure 'DSS Comparison Insight' =
+			VAR Advantage = [DSS Paired Advantage pp]
+			VAR Periods = [DSS Paired Periods]
+			RETURN IF(HASONEVALUE('dss runs'[run_id]) && HASONEVALUE('DSS Strategy'[Code]), IF(Periods > 0, SELECTEDVALUE('DSS Strategy'[Strategy]) & ": " & Periods & " paired periods. DSS mean uplift " & IF(Advantage > 0, "higher by ", IF(Advantage < 0, "lower by ", "equal at ")) & FORMAT(ABS(Advantage), "0.00") & " pp. " & [DSS Strategy Feasibility] & ".", "No paired results available for this benchmark."))
+		displayFolder: DSS
+		lineageTag: d458bfe0-4e66-4dd8-8361-d08e339e0a77
+
 	column Value
 		isHidden
 		formatString: 0

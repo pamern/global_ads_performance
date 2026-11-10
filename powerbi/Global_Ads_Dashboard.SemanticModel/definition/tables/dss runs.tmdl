@@ -1,0 +1,338 @@
+table 'dss runs'
+	lineageTag: ac43da31-598b-440a-8f97-ef706422c7b3
+
+	column run_id
+		dataType: string
+		lineageTag: a13251c1-aba4-42c9-a673-e38a3f138740
+		summarizeBy: none
+		sourceColumn: run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column created_at
+		dataType: dateTime
+		formatString: dd MMM yyyy HH:mm
+		lineageTag: 90989f58-43dc-469f-b417-5852299ff1b2
+		summarizeBy: none
+		sourceColumn: created_at
+
+		variation Variation
+			isDefault
+			relationship: 9acdd947-73d0-4719-953d-61453f65b7bb
+			defaultHierarchy: LocalDateTable_c2f98097-99d0-4716-b7ae-430b7a48b332.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column target
+		dataType: string
+		lineageTag: f79e777c-1a7f-402c-8978-93eb0543ed13
+		summarizeBy: none
+		sourceColumn: target
+
+		annotation SummarizationSetBy = Automatic
+
+	column metadata
+		dataType: string
+		lineageTag: 8585ae1a-8661-4bc7-a9b9-6833f1e2a561
+		summarizeBy: none
+		sourceColumn: metadata
+
+		annotation SummarizationSetBy = Automatic
+
+	column input_snapshot
+		dataType: string
+		lineageTag: d0fde3ec-82eb-4865-9058-6d8bb40ae1ca
+		summarizeBy: none
+		sourceColumn: input_snapshot
+
+		annotation SummarizationSetBy = Automatic
+
+	column grid_candidates
+		dataType: int64
+		formatString: 0
+		lineageTag: e1fb3ab4-0a35-458d-8aa2-440d97209210
+		summarizeBy: sum
+		sourceColumn: grid_candidates
+
+		annotation SummarizationSetBy = Automatic
+
+	column supported_candidates
+		dataType: int64
+		formatString: 0
+		lineageTag: d848e299-dea5-455d-9945-e4c4ada4b89f
+		summarizeBy: sum
+		sourceColumn: supported_candidates
+
+		annotation SummarizationSetBy = Automatic
+
+	column eligible_candidates
+		dataType: int64
+		formatString: 0
+		lineageTag: be7db16d-31b5-4bba-b5d2-dcf91d4ec685
+		summarizeBy: sum
+		sourceColumn: eligible_candidates
+
+		annotation SummarizationSetBy = Automatic
+
+	column paired_folds
+		dataType: int64
+		formatString: 0
+		lineageTag: 856e1fd8-29de-466a-8690-c8e9e3ecf18c
+		summarizeBy: sum
+		sourceColumn: paired_folds
+
+		annotation SummarizationSetBy = Automatic
+
+	column folds_dss_beats_matched
+		dataType: int64
+		formatString: 0
+		lineageTag: df1040c0-baff-425d-b805-4603b283e915
+		summarizeBy: sum
+		sourceColumn: folds_dss_beats_matched
+
+		annotation SummarizationSetBy = Automatic
+
+	column candidate_found
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 52ae7737-21d2-4a5f-8442-d2e9b9f8907d
+		summarizeBy: none
+		sourceColumn: candidate_found
+
+		annotation SummarizationSetBy = Automatic
+
+	column selector_value
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f935bed4-c606-4d1c-9709-84bcbdc05637
+		summarizeBy: none
+		sourceColumn: selector_value
+
+		annotation SummarizationSetBy = Automatic
+
+	column concavity_positive
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: aa3e88fa-255d-4bf6-bd26-0ec6d3e753ac
+		summarizeBy: none
+		sourceColumn: concavity_positive
+
+		annotation SummarizationSetBy = Automatic
+
+	column decision_status
+		dataType: string
+		lineageTag: 404dd5d3-260e-4007-b970-a748940e9ba5
+		summarizeBy: none
+		sourceColumn: decision_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column simulation_budget
+		dataType: double
+		lineageTag: 96cd9c10-fa34-4ff1-852a-d2cdbc9431a4
+		summarizeBy: sum
+		sourceColumn: simulation_budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column moved_share
+		dataType: double
+		lineageTag: dcce7846-3193-40d5-8281-81ffea55550f
+		summarizeBy: sum
+		sourceColumn: moved_share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column moved_budget
+		dataType: double
+		lineageTag: 66606e0e-e9b5-4117-b2ed-57b4d5087f05
+		summarizeBy: sum
+		sourceColumn: moved_budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column worst_revenue_uplift
+		dataType: double
+		lineageTag: d7f7848f-7312-4b8d-8b03-3c0182625492
+		summarizeBy: sum
+		sourceColumn: worst_revenue_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column median_revenue_uplift
+		dataType: double
+		lineageTag: f8f80bd0-0218-4397-b5ed-8865983e2eee
+		summarizeBy: sum
+		sourceColumn: median_revenue_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column best_revenue_uplift
+		dataType: double
+		lineageTag: feeb383b-18d7-40ea-bbaf-0f96e08aa09f
+		summarizeBy: sum
+		sourceColumn: best_revenue_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column historical_win_rate
+		dataType: double
+		lineageTag: 9af3da6c-c531-49bd-8501-6d05a0e49e88
+		summarizeBy: sum
+		sourceColumn: historical_win_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column worst_impression_uplift
+		dataType: double
+		lineageTag: 3effd294-c6f4-4caf-8b3b-cf4cdd8abffa
+		summarizeBy: sum
+		sourceColumn: worst_impression_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column worst_conversion_uplift
+		dataType: double
+		lineageTag: b4479e5b-0a12-433c-a764-e6b1b02d8d8d
+		summarizeBy: sum
+		sourceColumn: worst_conversion_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column break_even_deterioration_pct
+		dataType: double
+		lineageTag: bddb6e70-067c-4a9a-8adb-8819ab840a5a
+		summarizeBy: sum
+		sourceColumn: break_even_deterioration_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column oot_win_rate
+		dataType: double
+		lineageTag: 465abc59-e309-4f0b-80be-7681384a4294
+		summarizeBy: sum
+		sourceColumn: oot_win_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column oot_mean_uplift
+		dataType: double
+		lineageTag: d29aab8e-955c-4146-be90-99c03fd21ea7
+		summarizeBy: sum
+		sourceColumn: oot_mean_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column oot_median_uplift
+		dataType: double
+		lineageTag: e3846474-1d39-402a-9fc9-ab292fce8e35
+		summarizeBy: sum
+		sourceColumn: oot_median_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column oot_worst_uplift
+		dataType: double
+		lineageTag: 2a81cdc0-1754-48d6-8867-26e5f36ceed6
+		summarizeBy: sum
+		sourceColumn: oot_worst_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column matched_mean_uplift
+		dataType: double
+		lineageTag: e8b404db-a973-4387-b15d-bcc13372ae56
+		summarizeBy: sum
+		sourceColumn: matched_mean_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column matched_median_uplift
+		dataType: double
+		lineageTag: 18b9cc9a-a25a-4944-8a36-716538957e1d
+		summarizeBy: sum
+		sourceColumn: matched_median_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column matched_worst_uplift
+		dataType: double
+		lineageTag: ea4e658a-73cd-4e1d-b977-cc488cac44f6
+		summarizeBy: sum
+		sourceColumn: matched_worst_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mean_uplift_difference
+		dataType: double
+		lineageTag: 6b72cf0e-005a-4c96-98ce-f2141e34465f
+		summarizeBy: sum
+		sourceColumn: mean_uplift_difference
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mean_dss_moved_share
+		dataType: double
+		lineageTag: 484d5c1a-1413-43bf-9bd3-6c98fc070df8
+		summarizeBy: sum
+		sourceColumn: mean_dss_moved_share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column mean_matched_moved_share
+		dataType: double
+		lineageTag: fc77afa5-c69f-4ad0-9ba3-c4d7682cbf87
+		summarizeBy: sum
+		sourceColumn: mean_matched_moved_share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'dss runs' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    dss_runs = Source{[Schema="dss",Item="runs"]}[Data]
+				in
+				    dss_runs
+
