@@ -1,0 +1,843 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "dssStrategyCompare005",
+  "displayName": "Strategy Comparison",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "visualInteractions": [
+    {
+      "source": "scHeader",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeader",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scHeaderAccent",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scSidebar",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scReadingNotes",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBackToDecision",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scDssMean",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkMean",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPairedAdvantage",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scComparisonInsight",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scMonthlyPerformance",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scPerformanceMatrix",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scHeader",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scHeaderAccent",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scSidebar",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scRunSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scBenchmarkSlicer",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scReadingNotes",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scBackToDecision",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scDssMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scBenchmarkMean",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scPairedAdvantage",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scComparisonInsight",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scMonthlyPerformance",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenefitMovement",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkSlicer",
+      "target": "scPerformanceMatrix",
+      "type": "NoFilter"
+    },
+    {
+      "source": "scBenchmarkSlicer",
+      "target": "scBenefitMovement",
+      "type": "NoFilter"
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F5F7FB'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F5F7FB'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

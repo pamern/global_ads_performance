@@ -11,7 +11,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode","MCP-PBIModeling"]
 
-annotation PBI_QueryOrder = ["mart DimCampaignType","mart DimCountry","mart DimDate","mart DimIndustry","mart FctAdPerformance","mart DimPlatform"]
+annotation PBI_QueryOrder = ["mart DimCampaignType","mart DimCountry","mart DimDate","mart DimIndustry","mart FctAdPerformance","mart DimPlatform","dss allocations","dss runs","dss validation","dss scenarios"]
 
 ref table 'mart DimCampaignType'
 ref table 'mart DimCountry'
@@ -24,6 +24,15 @@ ref table 'mart DimPlatform'
 ref table _Measures
 ref table 'Growth Pocket'
 ref table 'Growth Opportunity Metrics'
+ref table 'dss allocations'
+ref table 'dss runs'
+ref table LocalDateTable_c2f98097-99d0-4716-b7ae-430b7a48b332
+ref table 'dss validation'
+ref table LocalDateTable_baa49f20-dc25-4235-ad0b-e38205972500
+ref table LocalDateTable_e48139f5-f478-4640-a725-1341070f5f0c
+ref table 'dss scenarios'
+ref table LocalDateTable_f8e8c06e-1416-4da4-bb45-4f5fd78902cf
+ref table 'DSS Strategy'
 
 ref cultureInfo en-US
 

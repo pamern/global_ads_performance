@@ -1,0 +1,26 @@
+/// Disconnected four-row strategy label/selector dimension. The benchmark slicer excludes DSS; all-strategy visuals ignore the selector interaction.
+table 'DSS Strategy'
+	lineageTag: 7fe81bbf-9014-4188-be89-7381997348a8
+
+	column Code
+		isHidden
+		lineageTag: fff09553-058a-47ae-8242-644727528e6d
+		isNameInferred
+		sourceColumn: [Code]
+
+	column Strategy
+		lineageTag: 6b2c550f-e8ee-4e06-a700-f84c7dc79658
+		isNameInferred
+		sourceColumn: [Strategy]
+		sortByColumn: Order
+
+	column Order
+		isHidden
+		lineageTag: 844aede4-c49f-4a02-ae70-dee46cce40a5
+		isNameInferred
+		sourceColumn: [Order]
+
+	partition 'DSS Strategy' = calculated
+		mode: import
+		source = DATATABLE("Code", STRING, "Strategy", STRING, "Order", INTEGER, {{"dss","DSS Recommended",0},{"matched_simple","Matched-simple",1},{"prev","Previous Month",2},{"simple5","Simple 5pp",3}})
+

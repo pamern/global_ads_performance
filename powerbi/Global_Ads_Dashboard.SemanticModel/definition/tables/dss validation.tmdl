@@ -1,0 +1,184 @@
+table 'dss validation'
+	lineageTag: b72de312-7085-4e59-a8a1-5e69c4123afc
+
+	column run_id
+		dataType: string
+		lineageTag: 73d68cb3-6461-483c-9842-7bdf0a9b37fd
+		summarizeBy: none
+		sourceColumn: run_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column test_month
+		dataType: dateTime
+		formatString: MMM yyyy
+		lineageTag: 0be67bbc-ca0b-41aa-9885-e0c9cc8cabae
+		summarizeBy: none
+		sourceColumn: test_month
+
+		variation Variation
+			isDefault
+			relationship: 25973da7-5fa0-4993-9c61-201d7e932f08
+			defaultHierarchy: LocalDateTable_baa49f20-dc25-4235-ad0b-e38205972500.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column train_end
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5f1e534d-f14b-4ac8-88ef-ee60b271612e
+		summarizeBy: none
+		sourceColumn: train_end
+
+		variation Variation
+			isDefault
+			relationship: 19ea0edf-f369-4bae-8a4b-dacbd93c3907
+			defaultHierarchy: LocalDateTable_e48139f5-f478-4640-a725-1341070f5f0c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column strategy
+		dataType: string
+		lineageTag: 12292a3e-e196-4592-b0e7-f447eb8126e6
+		summarizeBy: none
+		sourceColumn: strategy
+
+		annotation SummarizationSetBy = Automatic
+
+	column training_months
+		dataType: int64
+		formatString: 0
+		lineageTag: ac9675d0-7cd8-49c4-b6ea-5ca986a69f0c
+		summarizeBy: sum
+		sourceColumn: training_months
+
+		annotation SummarizationSetBy = Automatic
+
+	column supported_candidates
+		dataType: int64
+		formatString: 0
+		lineageTag: 669d9f57-8995-49ca-adbc-447fc2a55f1e
+		summarizeBy: sum
+		sourceColumn: supported_candidates
+
+		annotation SummarizationSetBy = Automatic
+
+	column eligible_candidates
+		dataType: int64
+		formatString: 0
+		lineageTag: 9e4f50dd-c27c-42db-8501-2288ced54bc6
+		summarizeBy: sum
+		sourceColumn: eligible_candidates
+
+		annotation SummarizationSetBy = Automatic
+
+	column found
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: fd94a7dc-714a-4d9d-b455-1ba51fb2e52a
+		summarizeBy: none
+		sourceColumn: found
+
+		annotation SummarizationSetBy = Automatic
+
+	column inside_support
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: fa110cce-d398-4563-9ccf-02275b0c77c9
+		summarizeBy: none
+		sourceColumn: inside_support
+
+		annotation SummarizationSetBy = Automatic
+
+	column pass_funnel
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 79d27f86-fcc4-4296-b56d-3fd7500bf44f
+		summarizeBy: none
+		sourceColumn: pass_funnel
+
+		annotation SummarizationSetBy = Automatic
+
+	column budget
+		dataType: double
+		lineageTag: dbf16346-b294-4b58-a272-364c50e03c8f
+		summarizeBy: sum
+		sourceColumn: budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column moved_share
+		dataType: double
+		lineageTag: 736862e6-4b18-4e29-93bd-ef8ba019ce63
+		summarizeBy: sum
+		sourceColumn: moved_share
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column moved_budget
+		dataType: double
+		lineageTag: b64f645c-44a2-4647-a859-a9accf3fef4a
+		summarizeBy: sum
+		sourceColumn: moved_budget
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column revenue_uplift
+		dataType: double
+		lineageTag: 51951ac8-7049-4652-bbd9-3145e32e48e7
+		summarizeBy: sum
+		sourceColumn: revenue_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column impression_uplift
+		dataType: double
+		lineageTag: f029f1da-5af6-4ff3-b58a-f7d93ace77c2
+		summarizeBy: sum
+		sourceColumn: impression_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column conversion_uplift
+		dataType: double
+		lineageTag: 7f95aaf0-35e4-4edb-b5f2-377f79ce8eca
+		summarizeBy: sum
+		sourceColumn: conversion_uplift
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column uplift_per_1pp_moved
+		dataType: double
+		lineageTag: 276e2aea-bfb4-4ff2-9fe5-9892a290c4c7
+		summarizeBy: sum
+		sourceColumn: uplift_per_1pp_moved
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'dss validation' = m
+		mode: import
+		source =
+				let
+				    Source = PostgreSQL.Database("aws-0-ap-northeast-1.pooler.supabase.com:5432", "postgres"),
+				    dss_validation = Source{[Schema="dss",Item="validation"]}[Data]
+				in
+				    dss_validation
+

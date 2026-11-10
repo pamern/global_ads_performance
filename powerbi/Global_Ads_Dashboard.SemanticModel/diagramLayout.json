@@ -4,14 +4,14 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 275.18256130790195,
+        "x": 275.53134579359676,
         "y": 6.2779291553133527
       },
       "nodes": [
         {
           "location": {
             "x": 588.00724794104963,
-            "y": 530.10340186134749
+            "y": 562.29818609025881
           },
           "nodeIndex": "mart DimCampaignType",
           "nodeLineageTag": "f733be19-ffb1-4203-ab45-93ce151f3d73",
@@ -24,7 +24,7 @@
         {
           "location": {
             "x": 334.20297533519118,
-            "y": -50
+            "y": -17.805215771088683
           },
           "nodeIndex": "mart DimCountry",
           "nodeLineageTag": "db6a1c68-1c1b-4766-b72d-ba7ed706bcda",
@@ -37,7 +37,7 @@
         {
           "location": {
             "x": 618.44850778348791,
-            "y": 48.395276712233454
+            "y": 80.59006094114477
           },
           "nodeIndex": "mart DimDate",
           "nodeLineageTag": "e00dde14-0cc8-47be-b89d-872ec23e800c",
@@ -50,7 +50,7 @@
         {
           "location": {
             "x": 50,
-            "y": 239.15668993070159
+            "y": 271.35147415961291
           },
           "nodeIndex": "mart DimIndustry",
           "nodeLineageTag": "1da3db37-28cc-46af-936b-5772d178a9cb",
@@ -63,7 +63,7 @@
         {
           "location": {
             "x": 202.18266838308296,
-            "y": 530.141228919072
+            "y": 562.33601314798329
           },
           "nodeIndex": "mart DimPlatform",
           "nodeLineageTag": "8c62dc24-a25c-41f9-9281-b64df30ea1b6",
@@ -76,7 +76,7 @@
         {
           "location": {
             "x": 334.23826485587222,
-            "y": 179.93075218301962
+            "y": 212.12553641193094
           },
           "nodeIndex": "mart FctAdPerformance",
           "nodeLineageTag": "9957c77b-f507-4b6a-8d6f-bb0bdebb564d",
@@ -89,7 +89,7 @@
         {
           "location": {
             "x": 852.44850778348791,
-            "y": 254.070614459536
+            "y": 286.26539868844731
           },
           "nodeIndex": "_Measures",
           "size": {
@@ -101,7 +101,7 @@
         {
           "location": {
             "x": 1103.4485077834879,
-            "y": 254.070614459536
+            "y": 286.26539868844731
           },
           "nodeIndex": "Growth Pocket",
           "nodeLineageTag": "9eed91c9-d585-460b-8d02-ed7700dd0eea",
@@ -114,12 +114,77 @@
         {
           "location": {
             "x": 1354.4485077834879,
-            "y": 254.070614459536
+            "y": 286.26539868844731
           },
           "nodeIndex": "Growth Opportunity Metrics",
           "nodeLineageTag": "d899ba4f-a494-436d-bf5f-843c75398320",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1638.4485077834879,
+            "y": 657.38051202269253
+          },
+          "nodeIndex": "dss allocations",
+          "nodeLineageTag": "237c3539-8f63-4a0e-b38d-24b1375677cd",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1787.2988231572222,
+            "y": 302.3017680580441
+          },
+          "nodeIndex": "dss runs",
+          "nodeLineageTag": "ac43da31-598b-440a-8f97-ef706422c7b3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1984.4620006265911,
+            "y": 659.5204238812139
+          },
+          "nodeIndex": "dss scenarios",
+          "nodeLineageTag": "7b986d92-ea7d-4db9-84f1-be213657d111",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2047.4904247715153,
+            "y": -50
+          },
+          "nodeIndex": "dss validation",
+          "nodeLineageTag": "b72de312-7085-4e59-a8a1-5e69c4123afc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 2281.4904247715153,
+            "y": 428.76021194060695
+          },
+          "nodeIndex": "DSS Strategy",
+          "nodeLineageTag": "7fe81bbf-9014-4188-be89-7381997348a8",
+          "size": {
+            "height": 152,
             "width": 234
           },
           "zIndex": 0
