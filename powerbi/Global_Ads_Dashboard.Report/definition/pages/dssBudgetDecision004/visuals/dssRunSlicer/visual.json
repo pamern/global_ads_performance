@@ -101,7 +101,7 @@
                                   "Source": "d"
                                 }
                               },
-                              "Property": "run_id"
+                              "Property": "created_at"
                             }
                           }
                         ],
@@ -109,7 +109,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'6b8dfd0a-798b-59c3-b557-8f477d02899e'"
+                                "Value": "datetime'2026-11-05T10:54:33.163'"
                               }
                             }
                           ]

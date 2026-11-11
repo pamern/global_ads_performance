@@ -467,5 +467,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5c8b99c5a8a129756512",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Growth Alert"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

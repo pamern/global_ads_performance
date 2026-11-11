@@ -345,5 +345,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "847c5d2503b0e898bc8d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "DSS Recommended Action"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

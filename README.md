@@ -1,74 +1,37 @@
-# Project Structure
+# NEXORA — Global Ad Spend
 
-```text
-global_ads_performance/
-│
-├── config/
-│
-├── data/
-│   ├── raw/
-│   └── sample/
-│
-├── analytics/
-│
-├── dbt-modeling/
-│   ├── models/
-│   └── tests/
-│
-├── src/ # Viết logic xử lý
-│
-├── scripts/ # Chạy task
-│
-├── dashboard/
-│   └── screenshots/
-│
-├── docs/
-```
+Dự án phân tích hiệu quả quảng cáo trên Google, Meta và TikTok. Dữ liệu được xử lý bằng Python, xây dựng Data Warehouse bằng dbt + PostgreSQL và trực quan hóa trên Power BI. DSS mô phỏng các phương án phân bổ ngân sách từ dữ liệu lịch sử.
 
-# **QUY TRÌNH LÀM VIỆC GIT – POWER BI TEAM**
+## Cài đặt
 
-**1. Quy định nhánh**
-- `main`: Nhánh chính của toàn bộ dự án. Không tự ý merge.
-- `power-bi-dev`: Nhánh tích hợp chung của team Power BI.
-- `feature/<ten-thanh-vien>-<chuc-nang>`: Nhánh cá nhân để phát triển tính năng.
-
-**2. Quy trình làm việc**
-
-**Bước 1 – Tạo nhánh cá nhân từ `power-bi-dev`**
+Cần Python 3.14+, uv và PostgreSQL. Mở dashboard bằng Power BI Desktop.
 
 ```bash
-git fetch origin
-git switch power-bi-dev
-git pull --ff-only origin power-bi-dev
-git switch -c feature/ten-thanh-vien-chuc-nang
+uv sync
+cp .env.example .env
 ```
 
-**Bước 2 – Code và commit trên nhánh cá nhân**
+Cấu hình kết nối trong `.env`. Local mặc định dùng PostgreSQL tại `127.0.0.1:55432`, database và user `nexora`; cần tạo và khởi động database trước khi chạy.
+
+## Chạy local
+
+Nếu database chưa có dữ liệu Raw, nạp CSV nguồn:
 
 ```bash
-git status
-git add <file-or-folder>
-git commit -m "feat(powerbi): mô tả thay đổi"
-git push -u origin feature/ten-thanh-vien-chuc-nang
+DATABASE_URL=postgresql://nexora@127.0.0.1:55432/nexora uv run python scripts/load_raw_to_postgres.py
 ```
 
-**Bước 3 – Tạo Pull Request trên GitHub**
+Sau đó xây dựng warehouse và chạy DSS:
 
-- Base: `power-bi-dev`
-- Compare: `feature/ten-thanh-vien-chuc-nang`
-- Thành viên khác review và thống nhất trước khi merge.
+```bash
+uv run python scripts/dbt_warehouse.py build --target local
+uv run python scripts/run_dss.py --target local
+```
 
-**3. Nguyên tắc bắt buộc**
-- Không commit trực tiếp lên `main` hoặc `power-bi-dev`.
-- Không tự ý merge PR khi chưa được review/chấp thuận.
-- Mỗi người làm trên nhánh riêng, hạn chế chỉnh sửa đồng thời cùng file PBIP.
-- Trước khi tạo PR, cập nhật thay đổi mới nhất từ `power-bi-dev` và xử lý conflict nếu có.
-- Commit rõ nội dung, chỉ đưa những file liên quan vào commit.
+Mở `powerbi/Global_Ads_Dashboard.pbip` trong Power BI Desktop và cấu hình nguồn PostgreSQL tương ứng.
 
-**4. Khi hoàn thiện dashboard**
+## Tài liệu
 
-Sau khi tích hợp và kiểm thử toàn bộ dashboard trên `power-bi-dev`, nhóm trưởng sẽ xem xét tạo PR:
-
-`power-bi-dev` → `main`
-
-**Lưu ý: Mọi PR của team Power BI trong quá trình phát triển phải hướng vào `power-bi-dev`, tuyệt đối không hướng vào `main` khi chưa được phê duyệt.**
+- [Data Warehouse](dbt-modeling/README.md): mô hình dữ liệu và cách chạy dbt.
+- [DSS](dss/README.md): mô phỏng phân bổ ngân sách.
+- [Data Dictionary](docs/data_dictionary.md): mô tả dữ liệu.

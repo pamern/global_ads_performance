@@ -21,10 +21,10 @@
                   {
                     "value": "DECISION CONTEXT",
                     "textStyle": {
+                      "fontWeight": "bold",
                       "fontFamily": "Segoe UI",
                       "fontSize": "15pt",
-                      "color": "#12239E",
-                      "fontWeight": "bold"
+                      "color": "#12239e"
                     }
                   }
                 ]
