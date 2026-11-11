@@ -4,10 +4,10 @@
   "position": {
     "x": 380,
     "y": 150,
-    "z": 20000,
+    "z": 11000,
     "height": 100,
     "width": 524,
-    "tabOrder": 7000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -323,23 +323,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "0bffef37d39180312545",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Growth Pocket"
-              }
-            },
-            "Property": "Growth Opportunity Count"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

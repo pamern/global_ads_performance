@@ -4,10 +4,10 @@
   "position": {
     "x": 381,
     "y": 354,
-    "z": 19,
+    "z": 10000,
     "height": 250,
     "width": 956,
-    "tabOrder": 20
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "tableEx",
@@ -259,9 +259,6 @@
       ],
       "columnWidth": [
         {
-          "selector": {
-            "metadata": "dss allocations.platform"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -270,12 +267,26 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "dss allocations.platform"
           }
         },
         {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "210D"
+                }
+              }
+            }
+          },
           "selector": {
             "metadata": "_Measures.DSS Current Share"
-          },
+          }
+        },
+        {
           "properties": {
             "value": {
               "expr": {
@@ -284,26 +295,12 @@
                 }
               }
             }
-          }
-        },
-        {
+          },
           "selector": {
             "metadata": "_Measures.DSS Proposed Share"
-          },
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "210D"
-                }
-              }
-            }
           }
         },
         {
-          "selector": {
-            "metadata": "_Measures.DSS Budget Change"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -312,6 +309,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "_Measures.DSS Budget Change"
           }
         }
       ]

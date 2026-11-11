@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssHistoricalSupport",
   "position": {
     "x": 933,
     "y": 914,
-    "width": 164,
+    "z": 25000,
     "height": 96,
-    "z": 34,
-    "tabOrder": 35
+    "width": 164,
+    "tabOrder": 23000
   },
   "visual": {
     "visualType": "cardVisual",

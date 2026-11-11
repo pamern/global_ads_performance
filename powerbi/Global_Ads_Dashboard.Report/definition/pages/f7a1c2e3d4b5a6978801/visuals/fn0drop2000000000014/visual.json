@@ -4,10 +4,10 @@
   "position": {
     "x": 381,
     "y": 846,
-    "z": 20000,
+    "z": 19000,
     "height": 177,
     "width": 440,
-    "tabOrder": 20000
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -677,51 +677,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "1388013179922549aacc",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Total Clicks"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0f2b4301cd6622433abd",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Clicks No Conversion %"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "525f5719ed34ce7980bc",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Total Conversions"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -4,10 +4,10 @@
   "position": {
     "x": 79,
     "y": 210,
-    "width": 249,
+    "z": 3000,
     "height": 100,
-    "z": 13,
-    "tabOrder": 14
+    "width": 249,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -28,8 +28,8 @@
               },
               "queryRef": "dss runs.created_at",
               "nativeQueryRef": "created_at",
-              "displayName": "Run created at",
-              "active": true
+              "active": true,
+              "displayName": "Run created at"
             }
           ]
         }
@@ -306,11 +306,11 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true,
     "syncGroup": {
       "groupName": "DSS Run",
       "fieldChanges": true,
       "filterChanges": true
-    }
+    },
+    "drillFilterOtherVisuals": true
   }
 }

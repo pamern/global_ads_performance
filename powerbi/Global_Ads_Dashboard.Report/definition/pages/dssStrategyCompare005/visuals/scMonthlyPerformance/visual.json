@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "scMonthlyPerformance",
   "position": {
     "x": 381,
     "y": 416,
-    "width": 1446,
+    "z": 10000,
     "height": 300,
-    "z": 20,
-    "tabOrder": 21
+    "width": 1446,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "lineChart",
@@ -28,42 +28,8 @@
               },
               "queryRef": "dss validation.test_month",
               "nativeQueryRef": "test_month",
-              "displayName": "Validation month",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "DSS OOT Monthly Uplift"
-                }
-              },
-              "queryRef": "_Measures.DSS OOT Monthly Uplift",
-              "nativeQueryRef": "DSS OOT Monthly Uplift",
-              "displayName": "DSS Recommended"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "DSS Strategy Mean Uplift"
-                }
-              },
-              "queryRef": "_Measures.DSS Strategy Mean Uplift",
-              "nativeQueryRef": "DSS Strategy Mean Uplift",
-              "displayName": "Selected Benchmark"
+              "active": true,
+              "displayName": "Validation month"
             }
           ]
         },
@@ -115,6 +81,40 @@
               "displayName": "Benchmark Feasibility"
             }
           ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "DSS OOT Monthly Uplift"
+                }
+              },
+              "queryRef": "_Measures.DSS OOT Monthly Uplift",
+              "nativeQueryRef": "DSS OOT Monthly Uplift",
+              "displayName": "DSS Recommended"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "DSS Strategy Mean Uplift"
+                }
+              },
+              "queryRef": "_Measures.DSS Strategy Mean Uplift",
+              "nativeQueryRef": "DSS Strategy Mean Uplift",
+              "displayName": "Selected Benchmark"
+            }
+          ]
         }
       },
       "sortDefinition": {
@@ -149,7 +149,7 @@
             "position": {
               "expr": {
                 "Literal": {
-                  "Value": "'TopLeft'"
+                  "Value": "'TopRight'"
                 }
               }
             },

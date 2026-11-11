@@ -4,10 +4,10 @@
   "position": {
     "x": 381,
     "y": 730,
-    "width": 1000,
+    "z": 11000,
     "height": 294,
-    "z": 21,
-    "tabOrder": 22
+    "width": 1000,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "tableEx",
@@ -207,9 +207,6 @@
       ],
       "columnWidth": [
         {
-          "selector": {
-            "metadata": "DSS Strategy.Strategy"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -218,12 +215,26 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "DSS Strategy.Strategy"
           }
         },
         {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "120D"
+                }
+              }
+            }
+          },
           "selector": {
             "metadata": "_Measures.DSS Strategy Mean Uplift"
-          },
+          }
+        },
+        {
           "properties": {
             "value": {
               "expr": {
@@ -232,26 +243,12 @@
                 }
               }
             }
-          }
-        },
-        {
+          },
           "selector": {
             "metadata": "_Measures.DSS Strategy Worst Uplift"
-          },
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "120D"
-                }
-              }
-            }
           }
         },
         {
-          "selector": {
-            "metadata": "_Measures.DSS Strategy Positive Months"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -260,12 +257,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "_Measures.DSS Strategy Positive Months"
           }
         },
         {
-          "selector": {
-            "metadata": "_Measures.DSS Strategy Average Movement"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -274,12 +271,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "_Measures.DSS Strategy Average Movement"
           }
         },
         {
-          "selector": {
-            "metadata": "_Measures.DSS Strategy Feasibility"
-          },
           "properties": {
             "value": {
               "expr": {
@@ -288,14 +285,14 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "_Measures.DSS Strategy Feasibility"
           }
         }
       ],
       "columnFormatting": [
         {
-          "selector": {
-            "metadata": "_Measures.DSS Strategy Mean Uplift"
-          },
           "properties": {
             "fontColor": {
               "solid": {
@@ -363,12 +360,12 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "_Measures.DSS Strategy Mean Uplift"
           }
         },
         {
-          "selector": {
-            "metadata": "_Measures.DSS Strategy Worst Uplift"
-          },
           "properties": {
             "fontColor": {
               "solid": {
@@ -436,6 +433,9 @@
                 }
               }
             }
+          },
+          "selector": {
+            "metadata": "_Measures.DSS Strategy Worst Uplift"
           }
         }
       ]

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssImpactRevenue",
   "position": {
-    "x": 1369,
-    "y": 416,
-    "width": 142,
-    "height": 124,
-    "z": 21,
-    "tabOrder": 22
+    "x": 1369.5983438383764,
+    "y": 415.649248627567,
+    "z": 12000,
+    "height": 124.92190532522505,
+    "width": 165.8054379771169,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "cardVisual",

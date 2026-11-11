@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssRecommendedAction",
   "position": {
-    "x": 397,
-    "y": 208,
-    "width": 538,
-    "height": 64,
-    "z": 101,
-    "tabOrder": 102
+    "x": 397.4787896711706,
+    "y": 183.97589693351324,
+    "z": 28000,
+    "height": 120.37929058612596,
+    "width": 538.29984658324247,
+    "tabOrder": 27000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -63,6 +63,17 @@
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ],

@@ -4,10 +4,10 @@
   "position": {
     "x": 79,
     "y": 340,
-    "z": 14,
+    "z": 4000,
     "height": 110,
     "width": 249,
-    "tabOrder": 15
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "slicer",
@@ -109,7 +109,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Matched-simple'"
+                                "Value": "'Simple 5pp'"
                               }
                             }
                           ]

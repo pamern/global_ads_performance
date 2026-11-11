@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "scBackToDecision",
   "position": {
     "x": 79,
     "y": 950,
-    "width": 249,
+    "z": 13000,
     "height": 54,
-    "z": 100,
-    "tabOrder": 100
+    "width": 249,
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "actionButton",
