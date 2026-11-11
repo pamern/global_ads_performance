@@ -103,7 +103,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Quarter / Month'"
+                  "Value": "'Quarter & Month'"
                 }
               }
             },
@@ -173,6 +173,13 @@
       "general": [
         {
           "properties": {
+            "responsive": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
             "filter": {
               "filter": {
                 "Version": 2,
@@ -197,16 +204,6 @@
                               },
                               "Property": "QuarterLabel"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Source": "m"
-                                }
-                              },
-                              "Property": "MonthName"
-                            }
                           }
                         ],
                         "Values": [
@@ -214,11 +211,6 @@
                             {
                               "Literal": {
                                 "Value": "'Q2'"
-                              }
-                            },
-                            {
-                              "Literal": {
-                                "Value": "'June'"
                               }
                             }
                           ]
@@ -237,16 +229,6 @@
                               },
                               "Property": "QuarterLabel"
                             }
-                          },
-                          {
-                            "Column": {
-                              "Expression": {
-                                "SourceRef": {
-                                  "Entity": "mart DimDate"
-                                }
-                              },
-                              "Property": "MonthName"
-                            }
                           }
                         ],
                         "decomposedIdentities": {
@@ -257,15 +239,6 @@
                                   {
                                     "Literal": {
                                       "Value": "'Q2'"
-                                    }
-                                  }
-                                ]
-                              },
-                              {
-                                "1": [
-                                  {
-                                    "Literal": {
-                                      "Value": "'June'"
                                     }
                                   }
                                 ]
@@ -284,38 +257,18 @@
                                   "Property": "QuarterLabel"
                                 }
                               }
-                            },
-                            {
-                              "value": {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "mart DimDate"
-                                    }
-                                  },
-                                  "Property": "MonthName"
-                                }
-                              }
                             }
                           ]
                         },
                         "valueMap": [
                           {
-                            "0": "Q2",
-                            "1": "June"
+                            "0": "Q2"
                           }
                         ]
                       }
                     }
                   }
                 ]
-              }
-            },
-            "responsive": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
               }
             }
           }

@@ -67,27 +67,6 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Display'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Search'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Shopping'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
                                 "Value": "'Video'"
                               }
                             }

@@ -597,14 +597,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dark = Revenue Response ≥ median, light = below median · bubble size = Revenue Contribution · lines = medians'"
+                  "Value": "'Bubble size = Revenue Contribution'"
                 }
               }
             },
