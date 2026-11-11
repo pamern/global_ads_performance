@@ -4,9 +4,9 @@
   "position": {
     "x": 63,
     "y": 140,
-    "width": 281,
-    "height": 884,
     "z": 12,
+    "height": 884,
+    "width": 281,
     "tabOrder": 13
   },
   "visual": {
@@ -21,10 +21,10 @@
                   {
                     "value": "DECISION CONTEXT",
                     "textStyle": {
+                      "fontWeight": "bold",
                       "fontFamily": "Segoe UI",
                       "fontSize": "15pt",
-                      "color": "#12239E",
-                      "fontWeight": "bold"
+                      "color": "#12239e"
                     }
                   }
                 ]

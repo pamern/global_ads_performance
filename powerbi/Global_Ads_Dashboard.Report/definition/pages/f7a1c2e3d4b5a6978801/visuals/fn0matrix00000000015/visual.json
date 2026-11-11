@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "fn0matrix00000000015",
   "position": {
-    "x": 843.98104265402844,
-    "y": 652.89099526066354,
+    "x": 844,
+    "y": 658,
     "z": 21000,
     "height": 370,
     "width": 990,
@@ -906,7 +906,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

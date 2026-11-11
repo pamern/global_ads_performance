@@ -74,21 +74,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Search'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
                                 "Value": "'Video'"
-                              }
-                            }
-                          ],
-                          [
-                            {
-                              "Literal": {
-                                "Value": "'Shopping'"
                               }
                             }
                           ]

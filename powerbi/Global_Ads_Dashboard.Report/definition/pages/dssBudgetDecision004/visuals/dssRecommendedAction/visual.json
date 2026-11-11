@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssRecommendedAction",
   "position": {
-    "x": 397,
-    "y": 208,
-    "width": 538,
-    "height": 64,
+    "x": 330,
+    "y": 202.5,
     "z": 101,
+    "height": 67.5,
+    "width": 650,
     "tabOrder": 102
   },
   "visual": {
@@ -334,5 +334,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "847c5d2503b0e898bc8d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "DSS Recommended Action"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
