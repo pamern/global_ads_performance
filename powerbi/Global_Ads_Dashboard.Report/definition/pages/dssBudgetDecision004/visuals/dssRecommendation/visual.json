@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssRecommendation",
   "position": {
-    "x": 397,
-    "y": 158,
-    "width": 538,
+    "x": 397.4787896711706,
+    "y": 158.99151586846824,
+    "z": 6000,
     "height": 48,
-    "z": 15,
-    "tabOrder": 16
+    "width": 538,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "cardVisual",

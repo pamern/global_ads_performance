@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssMove",
   "position": {
     "x": 1551,
     "y": 150,
-    "width": 276,
+    "z": 9000,
     "height": 188,
-    "z": 18,
-    "tabOrder": 19
+    "width": 276,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",

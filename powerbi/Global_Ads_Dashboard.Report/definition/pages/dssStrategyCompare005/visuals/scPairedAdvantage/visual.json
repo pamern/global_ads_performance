@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "scPairedAdvantage",
   "position": {
     "x": 1355,
     "y": 150,
-    "width": 472,
+    "z": 8000,
     "height": 136,
-    "z": 18,
-    "tabOrder": 19
+    "width": 472,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "cardVisual",

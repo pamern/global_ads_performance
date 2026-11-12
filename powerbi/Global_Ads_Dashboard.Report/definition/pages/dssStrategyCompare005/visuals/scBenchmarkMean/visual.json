@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "scBenchmarkMean",
   "position": {
     "x": 868,
     "y": 150,
-    "width": 472,
+    "z": 7000,
     "height": 136,
-    "z": 17,
-    "tabOrder": 18
+    "width": 472,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "cardVisual",

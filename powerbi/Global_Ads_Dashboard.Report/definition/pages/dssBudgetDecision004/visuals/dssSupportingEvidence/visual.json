@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssSupportingEvidence",
   "position": {
-    "x": 397,
-    "y": 274,
-    "width": 538,
-    "height": 54,
-    "z": 102,
-    "tabOrder": 103
+    "x": 397.4787896711706,
+    "y": 243.02988854180145,
+    "z": 29000,
+    "height": 102.20883162972959,
+    "width": 538.29984658324247,
+    "tabOrder": 28000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -63,6 +63,17 @@
           },
           "selector": {
             "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ],

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssRobustWorst",
   "position": {
     "x": 397,
     "y": 688,
-    "width": 184,
+    "z": 17000,
     "height": 132,
-    "z": 26,
-    "tabOrder": 27
+    "width": 184,
+    "tabOrder": 16000
   },
   "visual": {
     "visualType": "cardVisual",

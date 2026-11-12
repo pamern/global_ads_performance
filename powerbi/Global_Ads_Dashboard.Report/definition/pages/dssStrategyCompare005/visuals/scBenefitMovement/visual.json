@@ -4,10 +4,10 @@
   "position": {
     "x": 1397,
     "y": 730,
-    "z": 22,
+    "z": 12000,
     "height": 294,
     "width": 430,
-    "tabOrder": 23
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "scatterChart",

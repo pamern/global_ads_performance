@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssWorstRevenue",
   "position": {
     "x": 1259,
     "y": 150,
-    "width": 276,
+    "z": 8000,
     "height": 188,
-    "z": 17,
-    "tabOrder": 18
+    "width": 276,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "cardVisual",

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssWinRate",
   "position": {
     "x": 397,
     "y": 878,
-    "width": 440,
+    "z": 23000,
     "height": 136,
-    "z": 31,
-    "tabOrder": 32
+    "width": 440,
+    "tabOrder": 21000
   },
   "visual": {
     "visualType": "cardVisual",

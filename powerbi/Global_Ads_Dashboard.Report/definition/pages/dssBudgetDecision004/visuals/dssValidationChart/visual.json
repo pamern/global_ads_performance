@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssValidationChart",
   "position": {
     "x": 997,
     "y": 620,
-    "width": 830,
+    "z": 20000,
     "height": 230,
-    "z": 29,
-    "tabOrder": 30
+    "width": 830,
+    "tabOrder": 19000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -28,8 +28,8 @@
               },
               "queryRef": "dss validation.test_month",
               "nativeQueryRef": "test_month",
-              "displayName": "Validation month",
-              "active": true
+              "active": true,
+              "displayName": "Validation month"
             }
           ]
         },

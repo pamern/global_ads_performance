@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssRobustMedian",
   "position": {
     "x": 589,
     "y": 688,
-    "width": 184,
+    "z": 18000,
     "height": 132,
-    "z": 27,
-    "tabOrder": 28
+    "width": 184,
+    "tabOrder": 17000
   },
   "visual": {
     "visualType": "cardVisual",

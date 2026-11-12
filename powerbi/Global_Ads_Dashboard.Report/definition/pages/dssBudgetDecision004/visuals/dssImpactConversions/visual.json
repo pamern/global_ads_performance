@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "dssImpactConversions",
   "position": {
-    "x": 1518.5714285714287,
-    "y": 415.71428571428572,
-    "z": 22,
-    "height": 124.28571428571429,
-    "width": 150,
-    "tabOrder": 23
+    "x": 1519.5046302286464,
+    "y": 415.649248627567,
+    "z": 13000,
+    "height": 124.92190532522505,
+    "width": 170.348052716216,
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "cardVisual",
